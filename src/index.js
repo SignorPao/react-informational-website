@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from './App';
 
 // import components
 import Root from "./components/Root";
@@ -15,6 +14,7 @@ import Materials from "./pages/Materials";
 import Plumbing from "./pages/Plumbing";
 import CountryHouse from "./pages/CountryHouse";
 import Education from "./pages/Education";
+import GardenArticle from "./pages/GardenArticle";
 
 // react-router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "garden",
         element: <Garden />,
+      },
+      {
+        path: "garden/:id",
+        element: <GardenArticle />,
       },
       {
         path: "materials",
@@ -60,7 +64,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </React.StrictMode>
 );
