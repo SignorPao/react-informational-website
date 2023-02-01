@@ -17,7 +17,7 @@ const GardenArticle = () => {
   const { title, text } = article;
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <h2>{title}</h2>
       <p>{text}</p>
     </div>

@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useEffect} from "react";
 
 const Interior = () => {
-  return (
-    <div>Interior</div>
-  )
-}
+  useEffect(() => {
+    document.title = 'Интерьер || Mark Powell';
+  }, []);
 
-export default Interior
+  return (
+    <div className="flex flex-col">
+      <div className="h-screen bg-pink-100 flex items-center justify-center">
+        Interior header
+      </div>
+      <div className="h-[1000px] flex items-center justify-center">Content</div>
+    </div>
+  );
+};
+
+export default Interior;

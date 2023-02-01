@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useEffect} from "react";
+
+// import components
+import Header from "../components/Header";
 
 const Main = () => {
-  return (
-    <div>Main</div>
-  )
-}
+  useEffect(() => {
+    document.title = 'Главная || Mark Powell';
+  }, []);
 
-export default Main
+  return (
+    <>
+      <Header />
+      <div className="h-[1000px] flex items-center justify-center">
+        Main content
+      </div>
+    </>
+  );
+};
+
+export default Main;

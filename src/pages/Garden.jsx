@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 // import data
 import { gardenArticles } from "../dataGarden";
@@ -7,9 +7,15 @@ import { gardenArticles } from "../dataGarden";
 import { Link } from "react-router-dom";
 
 const Garden = () => {
+  useEffect(() => {
+    document.title = 'Сад и огород || Mark Powell';
+  }, []);
+
   return (
-    <div>
-      <h1>GARDEN</h1>
+    <div className="flex flex-col">
+      <div className="h-screen bg-teal-100 flex items-center justify-center">
+        Garden header
+      </div>
 
       {/* articles */}
       <div>

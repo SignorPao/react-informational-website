@@ -9,7 +9,7 @@ export const navData = [
     path: "interior",
   },
   {
-    link: "Сад",
+    link: "Сад и огород",
     path: "garden",
   },
   {

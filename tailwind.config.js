@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      primary: ["Merriweather", "serif"],
+      secondary: ["Inter", "sans-serif"],
+    },
     container: {
       padding: {
         DEFAULT: "16px",
@@ -15,6 +19,14 @@ module.exports = {
       xl: "1100px",
       "2xl": "1560px",
     },
+    // colors: {
+    //   primary: "",
+    //   secondary: "",
+    //   accent: "",
+    // },
+    // backgroundImage: {
+    //   hero: "url('')",
+    // },
     extend: {},
   },
   plugins: [],

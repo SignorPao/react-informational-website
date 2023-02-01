@@ -1,8 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const CountryHouse = () => {
+  useEffect(() => {
+    document.title = 'Дача || Mark Powell';
+  }, []);
+
   return (
-    <div>CountryHouse</div>
+    <div className="flex flex-col">
+    <div className="h-screen bg-lime-100 flex items-center justify-center">
+      Countryhouse header
+    </div>
+    <div className="h-[1000px] flex items-center justify-center">Content</div>
+  </div>
   )
 }
 
