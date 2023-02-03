@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <>
       <Header />
-      <div className="h-[1000px] flex items-center justify-center">
+      <div className="h-[1000px] dark:bg-dark dark:text-light flex items-center justify-center">
         Main content
       </div>
     </>

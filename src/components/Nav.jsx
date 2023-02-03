@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // import component
 import NavMobile from "./NavMobile";
+import Switcher from "./Swicher";
 
 // import data
 import { navData } from "../data";
@@ -63,17 +64,17 @@ const Nav = () => {
       className={`${
         show ? "top-0 left-0" : "-top-16"
       } fixed h-16 w-full px-8 transition-all duration-500 z-50 select-none ${
-        navState ? "bg-white shadow-md" : "bg-none"
+        navState ? "bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none" : "bg-none dark:bg-dark dark:text-light"
       }`}
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="font-primary text-lg font-bold">
+        <div className="order-2 md:order-none font-primary text-lg font-bold">
           <HashLink to={"#up"}>ЛОГО</HashLink>
         </div>
 
         {/* menu & burger & dark/light mode */}
-        <div className="flex gap-x-6 items-center">
+        <div className="order-3 md:order-none flex gap-x-6 items-center">
           {/* nav menu: mobile - hidden | desktop - show */}
           <ul className="hidden md:flex gap-x-2 lg:gap-x-4 font-light text-xs lg:text-base">
             {navData.map((item, index) => {
@@ -111,6 +112,11 @@ const Nav = () => {
           >
             <NavMobile click={() => setNavMobile(!navMobile)} />
           </div>
+        </div>
+
+        {/* dark/light mode */}
+        <div className="order-1 md:order-none">
+          <Switcher/>
         </div>
       </div>
     </nav>
