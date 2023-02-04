@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-// import component
+// import components
 import NavMobile from "./NavMobile";
 import Switcher from "./Swicher";
+import Search from "./Search";
 
 // import data
 import { navData } from "../data";
@@ -14,12 +15,16 @@ import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Nav = () => {
+  // all nav states
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navState, isNavState] = useState(false);
 
   // navMobile state
   const [navMobile, setNavMobile] = useState(false);
+
+  // search state
+  const [searchBar, setSearchBar] = useState(false);
 
   // scroll event (remove nav bg on the top)
   useEffect(() => {
@@ -49,22 +54,34 @@ const Nav = () => {
     };
   }, [lastScrollY]);
 
-    /* lock body scroll when mobile menu is open */
-    useEffect(() => {
-      if (navMobile) {
-        document.body.classList.add("lock");
-      } else {
-        document.body.classList.remove("lock");
-      }
-      return;
-    }, [navMobile]);
+  /* lock body scroll when mobile menu is open */
+  useEffect(() => {
+    if (navMobile) {
+      document.body.classList.add("lock");
+    } else {
+      document.body.classList.remove("lock");
+    }
+    return;
+  }, [navMobile]);
+
+  /* lock body scroll when search bar is open */
+  useEffect(() => {
+    if (searchBar) {
+      document.body.classList.add("lock");
+    } else {
+      document.body.classList.remove("lock");
+    }
+    return;
+  }, [searchBar]);
 
   return (
     <nav
       className={`${
         show ? "top-0 left-0" : "-top-16"
       } fixed h-16 w-full px-8 transition-all duration-500 z-50 select-none ${
-        navState ? "bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none" : "bg-none dark:bg-dark dark:text-light"
+        navState
+          ? "bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none"
+          : "bg-none dark:bg-dark dark:text-light"
       }`}
     >
       <div className="w-full h-full flex items-center justify-between">
@@ -73,7 +90,7 @@ const Nav = () => {
           <HashLink to={"#up"}>ЛОГО</HashLink>
         </div>
 
-        {/* menu & burger & dark/light mode */}
+        {/* menu & burger & navMobile */}
         <div className="order-3 md:order-none flex gap-x-6 items-center">
           {/* nav menu: mobile - hidden | desktop - show */}
           <ul className="hidden md:flex gap-x-2 lg:gap-x-4 font-light text-xs lg:text-base">
@@ -114,9 +131,30 @@ const Nav = () => {
           </div>
         </div>
 
-        {/* dark/light mode */}
-        <div className="order-1 md:order-none">
-          <Switcher/>
+        {/* dark/light & search */}
+        <div className="flex items-center justify-center gap-x-4">
+          {/* dark/light mode */}
+          <div className="order-1 md:order-none">
+            <Switcher />
+          </div>
+
+          {/* search button */}
+          <div
+            className={`hidden md:flex z-50 ${searchBar ? "text-light" : ""}`}
+          >
+            <button onClick={() => setSearchBar((prev) => !prev)}>
+              {searchBar ? "close" : "search"}
+            </button>
+          </div>
+
+          {/* search component */}
+          <div
+            className={`${
+              searchBar ? "hidden md:flex" : "hidden"
+            } fixed top-0 left-0 bottom-0 right-0 z-10 bg-dark/90`}
+          >
+            <Search click={() => setSearchBar(!searchBar)} />
+          </div>
         </div>
       </div>
     </nav>

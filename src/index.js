@@ -8,6 +8,7 @@ import Root from "./components/Root";
 // import pages
 import NotFoundPage from "./pages/NotFoundPage";
 import Main from "./pages/Main";
+import SearchResults from "./pages/SearchResults";
 import Interior from "./pages/Interior";
 import Garden from "./pages/Garden";
 import Materials from "./pages/Materials";
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Main />,
+      },
+      {
+        path: "search",
+        element: <SearchResults />,
       },
       {
         path: "interior",
