@@ -18,7 +18,7 @@ const Wrapper = ({ children }) => {
 
 const Root = () => {
   return (
-    <div id="up" className="">
+    <div id="up">
       <Wrapper>
         <Nav />
         <Outlet />
