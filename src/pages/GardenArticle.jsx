@@ -4,7 +4,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 // import data
-import { gardenArticles } from "../dataGarden";
+import { gardenArticles } from "../data/dataGarden";
 
 const GardenArticle = () => {
   // обработка id (useParams())

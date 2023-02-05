@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 
 // import data
-import { gardenArticles } from "../dataGarden";
+import { gardenArticles } from "../data/dataGarden";
 
 // react-router
 import { Link } from "react-router-dom";

@@ -1,7 +1,7 @@
 import React from "react";
 
 // import data
-import { navData } from "../data";
+import { navData } from "../data/data";
 
 // react-router
 import { Link } from "react-router-dom";

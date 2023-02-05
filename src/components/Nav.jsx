@@ -6,7 +6,7 @@ import Switcher from "./Swicher";
 import Search from "./Search";
 
 // import data
-import { navData } from "../data";
+import { navData } from "../data/data";
 
 // react-router
 import { NavLink } from "react-router-dom";
