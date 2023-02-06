@@ -21,9 +21,10 @@ const GardenArticle = () => {
       <h2>{title}</h2>
       <ul className="flex gap-x-2">
         {tags.map((item, index) => {
+          // const {} = item
           return (
             <li key={index} className="cursor-pointer hover:underline">
-              {item}
+              {item.tag}
             </li>
           );
         })}
