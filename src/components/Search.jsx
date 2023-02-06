@@ -1,44 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 
 // react-router
 import { Link } from "react-router-dom";
 
+// import lodash
+import debounce from "lodash.debounce";
+
 // import data
 import { gardenArticles } from "../data/dataGarden";
+
+import SearchResults from "../pages/SearchResults";
 
 const Search = ({ click }) => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
 
-  // const [delayedShow,setDelayedShow] = useState('')
-
-  // destructure gardenArticles
-
-  // console.log(gardenArticles);
-
+  // filtered data
   const filteredArticles = gardenArticles.filter((article) => {
-    // return article.title.toLowerCase().includes(searchField.toLowerCase());
     return (
       article.title.toLowerCase().includes(searchField.toLowerCase()) ||
       article.tagString.toLowerCase().includes(searchField.toLowerCase())
     );
   });
 
-  // const filteredArticles = gardenArticles.reduce((r, { title, tags }) => {
-  //   let o = tags.filter(({ tag }) =>
-  //     tag.toLowerCase().includes(searchField.toLowerCase())
-  //   );
-  //   if (o && o.length) {
-  //     r.push({ title, tags: [...o] });
-  //   }
-  //   return r;
-  // }, []);
-
-  // return article.title.toLowerCase().includes(searchField.toLowerCase());
-  // article.tags.tag.toLowerCase().includes(searchField.toLowerCase())
-
-  // console.log("filtered", filteredArticles);
-
+  // input checker & show results
   const handleChange = (e) => {
     e.preventDefault();
     setSearchField(e.target.value);
@@ -49,6 +34,13 @@ const Search = ({ click }) => {
     }
   };
 
+  // set delay to show results
+  const debouncedChangeHandler = useMemo(
+    () => debounce(handleChange, 1000),
+    []
+  );
+
+  // render filtered results
   const searchList = () => {
     if (searchShow) {
       return (
@@ -58,7 +50,6 @@ const Search = ({ click }) => {
               <div>{article.title}</div>
               <div className="flex gap-x-2">
                 {article.tags.map((item, index) => {
-                  // const { tag, tagLink } = item;
                   return <div key={index}>{item.tag}</div>;
                 })}
               </div>
@@ -69,19 +60,18 @@ const Search = ({ click }) => {
     }
   };
 
-
-
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center text-light">
       <div className="w-[50vw] flex gap-x-6 border-b-2 mb-40">
         <input
-          type="search"
+          type="text"
           autoComplete="off"
           name=""
           id=""
           placeholder="Поиск..."
           className="bg-transparent w-full pb-4 text-2xl outline-none focus:ring-0"
-          onChange={handleChange}
+          // onChange={handleChange}
+          onChange={debouncedChangeHandler}
           onKeyDown={(event) => {
             if (event.key === "Enter") {
               event.preventDefault();
@@ -89,13 +79,15 @@ const Search = ({ click }) => {
             }
           }}
         />
-        {/* <button id="goToSearchResults" className="pb-4" onClick={click}> */}
         <Link to={"search"} id="goToSearchResults" onClick={click}>
           Поиск
         </Link>
-        {/* </button> */}
       </div>
+
+      {/* show filtered results */}
       {searchList()}
+
+      {/* <SearchResults className="hidden" /> */}
     </div>
   );
 };
