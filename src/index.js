@@ -16,6 +16,7 @@ import Plumbing from "./pages/Plumbing";
 import CountryHouse from "./pages/CountryHouse";
 import Education from "./pages/Education";
 import GardenArticle from "./pages/GardenArticle";
+import InteriorArticle from "./pages/InteriorArticle";
 
 // import search context provider
 import SearchContextProvider from "./contexts/SearchContext";
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "interior",
         element: <Interior />,
+      },
+      {
+        path: "interior/:id",
+        element: <InteriorArticle />,
       },
       {
         path: "garden",

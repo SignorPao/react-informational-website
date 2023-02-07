@@ -3,14 +3,14 @@ import React from "react";
 // react-router
 import { useParams } from "react-router-dom";
 
-// import data
-import { gardenArticles } from "../data/dataGarden";
+// inport data
+import { interiorArticles } from "../data/dataInterior";
 
-const GardenArticle = () => {
+const InteriorArticle = () => {
   // обработка id (useParams())
   const { id } = useParams();
 
-  const article = gardenArticles.find((item) => {
+  const article = interiorArticles.find((item) => {
     return item.id === id;
   });
 
@@ -33,4 +33,4 @@ const GardenArticle = () => {
   );
 };
 
-export default GardenArticle;
+export default InteriorArticle;

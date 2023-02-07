@@ -11,12 +11,14 @@ import { SearchContext } from "../contexts/SearchContext";
 
 // import data
 import { gardenArticles } from "../data/dataGarden";
+import { interiorArticles } from "../data/dataInterior";
 
-// import SearchResults from "../pages/SearchResults";
-
-const Search = ({ click, props }) => {
+const Search = ({ click }) => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
+
+  // all data combined
+  const allArticles = [...gardenArticles, ...interiorArticles];
 
   // context
   const searchContext = useContext(SearchContext);
@@ -25,7 +27,7 @@ const Search = ({ click, props }) => {
   };
 
   // filtered data
-  const filteredArticles = gardenArticles.filter((article) => {
+  const filteredArticles = allArticles.filter((article) => {
     return (
       article.title.toLowerCase().includes(searchField.toLowerCase()) ||
       article.tagString.toLowerCase().includes(searchField.toLowerCase())
@@ -54,7 +56,7 @@ const Search = ({ click, props }) => {
     if (searchShow) {
       return (
         <div className="flex flex-col gap-y-4 justify-center items-start">
-          {filteredArticles.map((article) => (
+          {filteredArticles.slice(0, 2).map((article) => (
             <div key={article.id}>
               <div>{article.title}</div>
               <div className="flex gap-x-2">
@@ -75,11 +77,8 @@ const Search = ({ click, props }) => {
         <input
           type="text"
           autoComplete="off"
-          // name=""
-          // id=""
           placeholder="Поиск..."
           className="bg-transparent w-full pb-4 text-2xl outline-none focus:ring-0"
-          // onChange={handleChange}
           onChange={debouncedChangeHandler}
           onKeyDown={(event) => {
             if (event.key === "Enter") {
@@ -88,9 +87,6 @@ const Search = ({ click, props }) => {
             }
           }}
         />
-        {/* <Link to={"search"} id="goToSearchResults" onClick={click}>
-          Поиск
-        </Link> */}
         <Link
           to={"search"}
           id="goToSearchResults"
@@ -105,8 +101,6 @@ const Search = ({ click, props }) => {
 
       {/* show filtered results */}
       {searchList()}
-
-      {/* <SearchResults className="hidden" /> */}
     </div>
   );
 };

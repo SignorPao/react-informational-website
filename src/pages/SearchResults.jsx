@@ -1,20 +1,29 @@
 import React, { useContext } from "react";
 
+// react-router
+import { Link } from "react-router-dom";
+
 // import search context
 import { SearchContext } from "../contexts/SearchContext";
 
 // import data
 import { gardenArticles } from "../data/dataGarden";
+import { interiorArticles } from "../data/dataInterior";
 
 const SearchResults = () => {
   // context
   const searchContext = useContext(SearchContext);
 
+  // all data combined
+  const allArticles = [...gardenArticles, ...interiorArticles];
+
   // filtered data
-  const filteredArticles = gardenArticles.filter((article) => {
+  const filteredArticles = allArticles.filter((article) => {
     return (
-      article.title.toLowerCase().includes(searchContext.query) ||
-      article.tagString.toLowerCase().includes(searchContext.query)
+      article.title.toLowerCase().includes(searchContext.query.toLowerCase()) ||
+      article.tagString
+        .toLowerCase()
+        .includes(searchContext.query.toLowerCase())
     );
   });
 
@@ -38,6 +47,7 @@ const SearchResults = () => {
                   return <div key={index}>{item.tag}</div>;
                 })}
               </div>
+              <Link to={article.linkToArticle}>{article.link}</Link>
             </div>
           );
         })}

@@ -1,11 +1,9 @@
 // garden articles
 export const gardenArticles = [
   {
-    // id: 'garden1',
     id: "garden article one",
     title: "Garden1",
     tagString: "garden plants flowers",
-    // tags: ["garden", "plants", "flowers"],
     tags: [
       {
         tag: "garden",
@@ -20,6 +18,7 @@ export const gardenArticles = [
         tagLink: "#",
       },
     ],
+    linkToArticle: "/garden/garden article one",
     text: "garden text",
     link: "Читать...",
   },
@@ -27,7 +26,6 @@ export const gardenArticles = [
     id: "garden2",
     title: "Garden2",
     tagString: "garden plants flowers trees",
-    // tags: ["garden", "plants", "flowers", "trees"],
     tags: [
       {
         tag: "garden",
@@ -46,7 +44,7 @@ export const gardenArticles = [
         tagLink: "#",
       },
     ],
-    // linkToArticle: "/garden/garden2",
+    linkToArticle: "/garden/garden2",
     text: "garden text",
     link: "Читать...",
   },
@@ -54,7 +52,6 @@ export const gardenArticles = [
     id: "garden3",
     title: "Garden3",
     tagString: "garden plants flowers",
-    // tags: ["garden", "plants", "flowers"],
     tags: [
       {
         tag: "garden",
@@ -69,6 +66,7 @@ export const gardenArticles = [
         tagLink: "#",
       },
     ],
+    linkToArticle: "/garden/garden3",
     text: "garden text",
     link: "Читать...",
   },
