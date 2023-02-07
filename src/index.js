@@ -17,6 +17,9 @@ import CountryHouse from "./pages/CountryHouse";
 import Education from "./pages/Education";
 import GardenArticle from "./pages/GardenArticle";
 
+// import search context provider
+import SearchContextProvider from "./contexts/SearchContext";
+
 // react-router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -69,6 +72,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <SearchContextProvider>
+      <RouterProvider router={router} />
+    </SearchContextProvider>
   </React.StrictMode>
 );

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useContext } from "react";
 
 // react-router
 import { Link } from "react-router-dom";
@@ -6,14 +6,23 @@ import { Link } from "react-router-dom";
 // import lodash
 import debounce from "lodash.debounce";
 
+// import search context
+import { SearchContext } from "../contexts/SearchContext";
+
 // import data
 import { gardenArticles } from "../data/dataGarden";
 
-import SearchResults from "../pages/SearchResults";
+// import SearchResults from "../pages/SearchResults";
 
-const Search = ({ click }) => {
+const Search = ({ click, props }) => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
+
+  // context
+  const searchContext = useContext(SearchContext);
+  const searchQueryHandler = () => {
+    searchContext.searchHandler(searchField);
+  };
 
   // filtered data
   const filteredArticles = gardenArticles.filter((article) => {
@@ -66,8 +75,8 @@ const Search = ({ click }) => {
         <input
           type="text"
           autoComplete="off"
-          name=""
-          id=""
+          // name=""
+          // id=""
           placeholder="Поиск..."
           className="bg-transparent w-full pb-4 text-2xl outline-none focus:ring-0"
           // onChange={handleChange}
@@ -79,7 +88,17 @@ const Search = ({ click }) => {
             }
           }}
         />
-        <Link to={"search"} id="goToSearchResults" onClick={click}>
+        {/* <Link to={"search"} id="goToSearchResults" onClick={click}>
+          Поиск
+        </Link> */}
+        <Link
+          to={"search"}
+          id="goToSearchResults"
+          onClick={() => {
+            click();
+            searchQueryHandler();
+          }}
+        >
           Поиск
         </Link>
       </div>
