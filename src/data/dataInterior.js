@@ -18,6 +18,7 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+
   {
     id: "interior article two",
     title: "Interior2",
@@ -36,6 +37,7 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+
   {
     id: "interior article three",
     title: "Interior3",
@@ -54,6 +56,7 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+  
   {
     id: "interior article four",
     title: "Interior4",

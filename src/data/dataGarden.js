@@ -22,6 +22,7 @@ export const gardenArticles = [
     text: "garden text",
     link: "Читать...",
   },
+
   {
     id: "garden2",
     title: "Garden2",
@@ -48,6 +49,7 @@ export const gardenArticles = [
     text: "garden text",
     link: "Читать...",
   },
+  
   {
     id: "garden3",
     title: "Garden3",

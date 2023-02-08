@@ -7,7 +7,7 @@ import { interiorArticles } from "../data/dataInterior";
 import { Link } from "react-router-dom";
 
 // import search context
-import { SearchContext } from "../contexts/SearchContext";
+// import { SearchContext } from "../contexts/SearchContext";
 
 const Interior = () => {
   // title of the document
@@ -16,7 +16,11 @@ const Interior = () => {
   }, []);
 
   // context: send tag to search results
-  // let tagName = "";
+  // const searchContext = useContext(SearchContext);
+  // const searchQueryHandler = (tag) => {
+  //   searchContext.searchHandler(tag);
+  // };
+  // let tagName;
   // const searchContext = useContext(SearchContext);
   // const searchQueryHandler = () => {
   //   searchContext.searchHandler(tagName);
@@ -42,11 +46,20 @@ const Interior = () => {
                 <h3>{title}</h3>
 
                 {/* tags */}
-                <Link to={"search"} className="flex gap-x-2">
+                <div className="flex gap-x-2">
                   {tags.map((item, index) => {
-                    return <div key={index}>{item.tag}</div>;
+                    return (
+                      <div
+                        // to={"/search"}
+                        key={index}
+                        // onClick={searchQueryHandler(item.tag)}
+                        // onClick={console.log(item.tag)}
+                      >
+                        {item.tag}
+                      </div>
+                    );
                   })}
-                </Link>
+                </div>
 
                 {/* text */}
                 <p>{text}</p>
