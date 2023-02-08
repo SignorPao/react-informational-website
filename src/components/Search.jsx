@@ -38,7 +38,7 @@ const Search = ({ click }) => {
   const handleChange = (e) => {
     e.preventDefault();
     setSearchField(e.target.value);
-    if (e.target.value === "") {
+    if (e.target.value === "" || e.target.value === " ") {
       setSearchShow(false);
     } else {
       setSearchShow(true);
@@ -46,26 +46,25 @@ const Search = ({ click }) => {
   };
 
   // set delay to show results
-  const debouncedChangeHandler = useMemo(
-    () => debounce(handleChange, 1000),
-    []
-  );
+  const debouncedChangeHandler = useMemo(() => debounce(handleChange, 500), []);
 
   // render filtered results
   const searchList = () => {
     if (searchShow) {
       return (
         <div className="flex flex-col gap-y-4 justify-center items-start">
-          {filteredArticles.slice(0, 2).map((article) => (
-            <div key={article.id}>
-              <div>{article.title}</div>
-              <div className="flex gap-x-2">
-                {article.tags.map((item, index) => {
-                  return <div key={index}>{item.tag}</div>;
-                })}
-              </div>
-            </div>
-          ))}
+          {filteredArticles.slice(0, 2).map((article) => {
+            return (
+              <Link to={article.linkToArticle} onClick={click} key={article.id}>
+                <div>{article.title}</div>
+                <div className="flex gap-x-2">
+                  {article.tags.map((item, index) => {
+                    return <div key={index}>{item.tag}</div>;
+                  })}
+                </div>
+              </Link>
+            );
+          })}
         </div>
       );
     }

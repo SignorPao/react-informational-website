@@ -4,7 +4,7 @@ import React, { createContext, useState } from "react";
 export const SearchContext = createContext();
 
 // HOC component
-const SearchContextProvider = (props) => {
+const SearchContextProvider = ({ children }) => {
   const [query, setQuery] = useState("");
 
   const searchHandler = (query) => {
@@ -15,7 +15,7 @@ const SearchContextProvider = (props) => {
     <SearchContext.Provider
       value={{ query: query, searchHandler: searchHandler }}
     >
-      {props.children}
+      {children}
     </SearchContext.Provider>
   );
 };

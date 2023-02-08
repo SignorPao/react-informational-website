@@ -86,7 +86,7 @@ const Nav = () => {
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="order-2 md:order-none font-primary text-lg font-bold">
+        <div className="order-2 z-50 md:order-none font-primary text-lg font-bold">
           <HashLink to={"#up"}>ЛОГО</HashLink>
         </div>
 
@@ -134,7 +134,7 @@ const Nav = () => {
         {/* dark/light & search */}
         <div className="flex items-center justify-center gap-x-4">
           {/* dark/light mode */}
-          <div className="order-1 md:order-none">
+          <div className="order-1 md:order-none z-50">
             <Switcher />
           </div>
 
