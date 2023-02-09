@@ -6,25 +6,11 @@ import { interiorArticles } from "../data/dataInterior";
 // react-router
 import { Link } from "react-router-dom";
 
-// import search context
-// import { SearchContext } from "../contexts/SearchContext";
-
 const Interior = () => {
   // title of the document
   useEffect(() => {
     document.title = "Интерьер || Mark Powell";
   }, []);
-
-  // context: send tag to search results
-  // const searchContext = useContext(SearchContext);
-  // const searchQueryHandler = (tag) => {
-  //   searchContext.searchHandler(tag);
-  // };
-  // let tagName;
-  // const searchContext = useContext(SearchContext);
-  // const searchQueryHandler = () => {
-  //   searchContext.searchHandler(tagName);
-  // };
 
   return (
     <div className="flex flex-col">
@@ -48,16 +34,7 @@ const Interior = () => {
                 {/* tags */}
                 <div className="flex gap-x-2">
                   {tags.map((item, index) => {
-                    return (
-                      <div
-                        // to={"/search"}
-                        key={index}
-                        // onClick={searchQueryHandler(item.tag)}
-                        // onClick={console.log(item.tag)}
-                      >
-                        {item.tag}
-                      </div>
-                    );
+                    return <div key={index}>{item.tag}</div>;
                   })}
                 </div>
 

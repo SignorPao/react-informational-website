@@ -22,15 +22,16 @@ module.exports = {
         "2xl": "1560px",
       },
       colors: {
-        // primary: "",
-        // secondary: "",
-        // accent: "",
+        primary: "#3D5A80",
+        secondary: "#98C1D9",
+        secondaryLight: "#E0FBFC",
+        accent: "#EE6C4D",
         dark: "#171717",
         light: "#FFF",
       },
-      // backgroundImage: {
-      //   hero: "url('')",
-      // },
+      backgroundImage: {
+        hero: "url('assets/mainPage/headerBG.webp')",
+      },
     },
   },
   plugins: [],

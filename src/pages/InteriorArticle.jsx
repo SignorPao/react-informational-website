@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // react-router
 import { useParams } from "react-router-dom";
@@ -15,6 +15,11 @@ const InteriorArticle = () => {
   });
 
   const { title, tags, text } = article;
+
+  // title of the document
+  useEffect(() => {
+    document.title = `${title} || Mark Powell`;
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
