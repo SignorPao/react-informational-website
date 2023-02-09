@@ -14,11 +14,15 @@ import { NavLink } from "react-router-dom";
 // hash-link
 import { HashLink } from "react-router-hash-link";
 
+// icons
+import { FiSearch } from "react-icons/fi";
+import { IoClose, IoMenu } from "react-icons/io5";
+
 const Nav = () => {
   // all nav states
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [navState, isNavState] = useState(false);
+  // const [navState, isNavState] = useState(false);
 
   // navMobile state
   const [navMobile, setNavMobile] = useState(false);
@@ -27,11 +31,11 @@ const Nav = () => {
   const [searchBar, setSearchBar] = useState(false);
 
   // scroll event (remove nav bg on the top)
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 1 ? isNavState(true) : isNavState(false);
-    });
-  });
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     window.scrollY > 1 ? isNavState(true) : isNavState(false);
+  //   });
+  // });
 
   // scroll event (scroll down - hide nav / scroll up - show nav)
   const controlNavbar = () => {
@@ -74,36 +78,41 @@ const Nav = () => {
     return;
   }, [searchBar]);
 
+  // ${
+  //   navState
+  //     ? "bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none"
+  //     : "bg-none dark:bg-dark dark:text-light"
+  // }
+
   return (
     <nav
       className={`${
         show ? "top-0 left-0" : "-top-16"
-      } fixed h-16 w-full px-8 transition-all duration-500 z-50 select-none ${
-        navState
-          ? "bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none"
-          : "bg-none dark:bg-dark dark:text-light"
-      }`}
+      } fixed h-16 w-full px-8 transition-all duration-500 z-50 select-none bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none`}
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="order-2 z-50 md:order-none font-primary text-lg font-bold">
+        <div className="order-2 z-50 md:z-auto text-accent md:order-none font-primary text-lg font-bold">
           <HashLink to={"#up"}>ЛОГО</HashLink>
         </div>
 
         {/* menu & burger & navMobile */}
-        <div className="order-3 md:order-none flex gap-x-6 items-center">
+        <div className="order-3 md:order-none h-full flex gap-x-6 items-center">
           {/* nav menu: mobile - hidden | desktop - show */}
-          <ul className="hidden md:flex gap-x-2 lg:gap-x-4 font-light text-xs lg:text-base">
+          <ul className="hidden h-full md:flex gap-x-2 lg:gap-x-4 xl:font-medium text-xs xl:text-lg">
             {navData.map((item, index) => {
               // destructure item
               const { link, path } = item;
 
               return (
-                <li key={index}>
+                <li key={index} className="">
                   <NavLink
                     to={`${path}`}
                     className={({ isActive }) =>
-                      isActive ? "underline font-medium" : "hover:underline"
+                      // isActive ? "border-b-[3px] border-accent" : "navLink"
+                      isActive
+                        ? "text-primary dark:text-secondaryLight h-full flex items-center border-b-[4px] border-b-accent"
+                        : "text-secondary hover:text-primary dark:hover:text-secondaryLight transition-all duration-300 h-full flex items-center border-b-[4px] border-transparent"
                     }
                   >
                     {link}
@@ -115,10 +124,10 @@ const Nav = () => {
 
           {/* burger icon: mobile - show | desktop - hidden */}
           <button
-            className="md:hidden z-50 w-12 h-8 bg-slate-300"
+            className="md:hidden z-50 text-3xl"
             onClick={() => setNavMobile((prev) => !prev)}
           >
-            {navMobile ? "close" : "open"}
+            {navMobile ? <IoClose /> : <IoMenu />}
           </button>
 
           {/* nav mobile: mobile - toggle(show/hidden) | desktop - hidden */}
@@ -134,7 +143,7 @@ const Nav = () => {
         {/* dark/light & search */}
         <div className="flex items-center justify-center gap-x-4">
           {/* dark/light mode */}
-          <div className="order-1 md:order-none z-50">
+          <div className="order-1 md:order-none z-50 md:z-auto">
             <Switcher />
           </div>
 
@@ -143,7 +152,11 @@ const Nav = () => {
             className={`hidden md:flex z-50 ${searchBar ? "text-light" : ""}`}
           >
             <button onClick={() => setSearchBar((prev) => !prev)}>
-              {searchBar ? "close" : "search"}
+              {searchBar ? (
+                <IoClose className="text-2xl" />
+              ) : (
+                <FiSearch className="text-xl" />
+              )}
             </button>
           </div>
 
