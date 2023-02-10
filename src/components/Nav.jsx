@@ -141,7 +141,7 @@ const Nav = () => {
         </div>
 
         {/* dark/light & search */}
-        <div className="flex items-center justify-center gap-x-4">
+        <div className="flex items-center justify-center gap-x-4 xl:gap-x-8">
           {/* dark/light mode */}
           <div className="order-1 md:order-none z-50 md:z-auto">
             <Switcher />

@@ -30,7 +30,8 @@ module.exports = {
         light: "#FFF",
       },
       backgroundImage: {
-        hero: "url('assets/mainPage/headerBG.webp')",
+        hero: "url('assets/mainPage/hero-1.webp')",
+        heroMobile: "url('assets/mainPage/heroMobile-1.webp')",
       },
     },
   },
