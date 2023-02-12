@@ -59,3 +59,136 @@ export const navData = [
 //     path: "#",
 //   },
 // ];
+
+// footer data
+export const footerData = {
+  logo: "Лого",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Nec enim tellus congue morbi sed proin a. Et sit nunc sit nec quis gravida",
+  footerLinks: [
+    {
+      mainLink: "Интерьер",
+      mainPath: "interior",
+      subLinks: [
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+      ],
+    },
+    {
+      mainLink: "Сад и огород",
+      mainPath: "garden",
+      subLinks: [
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+      ],
+    },
+    {
+      mainLink: "Стройматериалы",
+      mainPath: "materials",
+      subLinks: [
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+      ],
+    },
+    {
+      mainLink: "Сантехника",
+      mainPath: "plumbing",
+      subLinks: [
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+      ],
+    },
+    {
+      mainLink: "Дача",
+      mainPath: "country",
+      subLinks: [
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+      ],
+    },
+    {
+      mainLink: "Самообразование",
+      mainPath: "education",
+      subLinks: [
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+        {
+          link: "SomeFooterSubLink",
+          path: "#",
+        },
+      ],
+    },
+  ],
+};
