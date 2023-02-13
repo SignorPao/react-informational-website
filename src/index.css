@@ -14,7 +14,7 @@
     @apply container mx-auto;
   }
   .section {
-    @apply py-8;
+    @apply py-8 lg:py-16;
   }
   .title {
     @apply font-primary;
