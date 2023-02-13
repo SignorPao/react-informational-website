@@ -3,6 +3,24 @@
 // import Header2 from "../assets/mainPage/hero-2.webp";
 // import Header3 from "../assets/mainPage/hero-3.webp";
 
+import mainInterior from "../assets/mainPage/mainInterior.webp";
+import mainInteriorSidebar1 from "../assets/mainPage/mainInteriorSidebar1.webp";
+import mainInteriorSidebar2 from "../assets/mainPage/mainInteriorSidebar2.webp";
+import mainInteriorSidebar3 from "../assets/mainPage/mainInteriorSidebar3.webp";
+
+import mainGarden1 from "../assets/mainPage/mainGarden1.webp";
+import mainGarden2 from "../assets/mainPage/mainGarden2.webp";
+import mainGarden3 from "../assets/mainPage/mainGarden3.webp";
+
+import mainMaterials from "../assets/mainPage/mainMaterials.webp";
+import mainMaterialsSidebar1 from "../assets/mainPage/mainMaterialsSidebar1.webp";
+import mainMaterialsSidebar2 from "../assets/mainPage/mainMaterialsSidebar2.webp";
+import mainMaterialsSidebar3 from "../assets/mainPage/mainMaterialsSidebar3.webp";
+
+import mainPlumbing1 from "../assets/mainPage/mainPlumbing1.webp";
+import mainPlumbing2 from "../assets/mainPage/mainPlumbing2.webp";
+import mainPlumbing3 from "../assets/mainPage/mainPlumbing3.webp";
+
 // nav data
 export const navData = [
   {
@@ -59,6 +77,93 @@ export const navData = [
 //     path: "#",
 //   },
 // ];
+
+// main data
+export const mainInteriorData = {
+  img: mainInterior,
+  title: "Выбираем потолок",
+  text: "Решили установить подвесной потолок? Но не можете определить какой именно выбрать? Тогда эта статья специально для вас. В ней вы узнаете ответы на основные вопросы",
+  link: "",
+};
+
+export const mainInteriorSidebarData = [
+  {
+    img: mainInteriorSidebar1,
+    title: "Инструкция по выбору обоев",
+    link: "",
+  },
+  {
+    img: mainInteriorSidebar2,
+    title: "Выбираем межкомнатные двери",
+    link: "",
+  },
+  {
+    img: mainInteriorSidebar3,
+    title: "Виниловая плитка",
+    link: "",
+  },
+];
+
+export const mainGardenData = [
+  {
+    img: mainGarden1,
+    title: "Подготовка почвы для посева",
+    link: "",
+  },
+  {
+    img: mainGarden2,
+    title: "Выбор теплицы",
+    link: "",
+  },
+  {
+    img: mainGarden3,
+    title: "Подготовка плодовых деревьев и кустарников к зиме",
+    link: "",
+  },
+];
+
+export const mainMaterialsData = {
+  img: mainMaterials,
+  title: "Клееный брус",
+  text: "Клееный профилированный брус — один из самых современных и востребованных строительных и столярных материалов. Технология, разработанная в 1960-1970 годах, представляет собой склеивание-спрессовывание досок различных хвойных пород",
+  link: "",
+};
+
+export const mainMaterialsSidebarData = [
+  {
+    img: mainMaterialsSidebar1,
+    title: "5 самых популярных строительных материалов",
+    link: "",
+  },
+  {
+    img: mainMaterialsSidebar2,
+    title: "Газоблоки",
+    link: "",
+  },
+  {
+    img: mainMaterialsSidebar3,
+    title: "Древесные плиты. Характеристики, область применения",
+    link: "",
+  },
+];
+
+export const mainPlumbingData = [
+  {
+    img: mainPlumbing1,
+    title: "Выбираем ванну",
+    link: "",
+  },
+  {
+    img: mainPlumbing2,
+    title: "Выбираем мойку для кухни",
+    link: "",
+  },
+  {
+    img: mainPlumbing3,
+    title: "Выбор смесителя для кухни",
+    link: "",
+  },
+];
 
 // footer data
 export const footerData = {
