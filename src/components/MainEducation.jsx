@@ -1,14 +1,41 @@
-import React from 'react'
+import React from "react";
+
+// react router dom
+import { Link } from "react-router-dom";
+
+// import data
+import { mainEducationData } from "../data/data";
 
 const MainEducation = () => {
-  return (
-    <section className='wrapper section'>
-      <div className='bg-yellow-200 h-[400px] flex flex-col lg:flex-row'>
-        <div className='flex-[50%] lg:flex-[40%]'>MainEducation</div>
-        <div className='bg-gray-200 flex-[50%] lg:flex-[60%]'>img</div>
-      </div>
-    </section>
-  )
-}
+  // destructure data
+  const { img, pretitle, title, link } = mainEducationData;
 
-export default MainEducation
+  return (
+    <section className="wrapper section">
+      <Link
+        to={link}
+        className="bg-secondary dark:bg-primary md:h-[300px] lg:h-[400px] flex flex-col md:flex-row group"
+      >
+        {/* image */}
+        <div className="md:flex-[60%] h-full">
+          <img
+            src={img}
+            alt="самообразование"
+            className="w-full object-cover h-full"
+          />
+        </div>
+
+        {/* text */}
+        <div className="md:flex-[40%] flex flex-col items-start justify-start gap-y-4 p-6">
+          <h3 className="pretitle text-primary dark:text-secondary">
+            {pretitle}
+          </h3>
+
+          <h2 className="title articleHover">{title}</h2>
+        </div>
+      </Link>
+    </section>
+  );
+};
+
+export default MainEducation;

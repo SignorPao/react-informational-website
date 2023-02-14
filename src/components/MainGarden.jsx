@@ -13,7 +13,7 @@ const MainGarden = () => {
         <Link to={`${"garden"}`} className="sectionTitle dark:text-light">
           Статьи о садоводстве
         </Link>
-        <div className="flex flex-col gap-y-4 lg:flex-row lg:gap-x-6 justify-between w-full">
+        <div className="flex flex-col gap-y-6 md:flex-row md:gap-x-4 lg:gap-x-6 justify-between w-full">
           {mainGardenData.map((item, index) => {
             // destructure item
             const { img, pretitle, title, link } = item;
@@ -21,11 +21,11 @@ const MainGarden = () => {
             return (
               <Link to={link} key={index} className="bg-white dark:bg-grey group flex-1 w-full">
                 {/* image */}
-                <div className="h-[300px] w-full">
+                <div className="h-[200px] lg:h-[300px] w-full">
                   <img
                     src={img}
                     alt="сад и огород"
-                    className="max-w-full h-full object-cover"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
@@ -37,10 +37,6 @@ const MainGarden = () => {
               </Link>
             );
           })}
-
-          {/* <div className="bg-gray-300 w-full h-[450px]">Article 1</div>
-          <div className="bg-gray-300 w-full h-[450px]">Article 2</div>
-          <div className="bg-gray-300 w-full h-[450px]">Article 3</div> */}
         </div>
       </div>
     </section>

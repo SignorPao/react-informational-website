@@ -21,6 +21,10 @@ import mainPlumbing1 from "../assets/mainPage/mainPlumbing1.webp";
 import mainPlumbing2 from "../assets/mainPage/mainPlumbing2.webp";
 import mainPlumbing3 from "../assets/mainPage/mainPlumbing3.webp";
 
+import mainCountryHouse from "../assets/mainPage/mainCountryHouse.webp";
+
+import mainEducation from "../assets/mainPage/mainEducation.webp";
+
 // nav data
 export const navData = [
   {
@@ -128,6 +132,7 @@ export const mainGardenData = [
 
 export const mainMaterialsData = {
   img: mainMaterials,
+  pretitle: "Стройматериалы",
   title: "Клееный брус",
   text: "Клееный профилированный брус — один из самых современных и востребованных строительных и столярных материалов. Технология, разработанная в 1960-1970 годах, представляет собой склеивание-спрессовывание досок различных хвойных пород",
   link: "",
@@ -154,20 +159,38 @@ export const mainMaterialsSidebarData = [
 export const mainPlumbingData = [
   {
     img: mainPlumbing1,
+    pretitle: "Сантехника",
     title: "Выбираем ванну",
     link: "",
   },
   {
     img: mainPlumbing2,
+    pretitle: "Сантехника",
     title: "Выбираем мойку для кухни",
     link: "",
   },
   {
     img: mainPlumbing3,
+    pretitle: "Сантехника",
     title: "Выбор смесителя для кухни",
     link: "",
   },
 ];
+
+export const mainCountryHouseData = {
+  img: mainCountryHouse,
+  pretitle: "Дача",
+  title: "Искусственный водоем своими руками",
+  text: "Искусственный пруд на вашем приусадебном участке создаст неповторимую атмосферу гармонии и безмятежности. Привлечет полезных насекомых и птиц.",
+  link: "",
+};
+
+export const mainEducationData = {
+  img: mainEducation,
+  pretitle: "Самообразование",
+  title: "Выбираем специализацию в программировании",
+  link: "",
+};
 
 // footer data
 export const footerData = {

@@ -15,11 +15,11 @@ const MainInterior = () => {
 
   return (
     <section className="wrapper section">
-      <div className="flex flex-col gap-y-6 lg:flex-row lg:items-start lg:gap-x-8">
+      <div className="flex flex-col gap-y-6 md:flex-row md:items-start md:gap-x-4 lg:gap-x-6">
         {/* main article */}
         <Link
           to={link}
-          className="bg-white dark:bg-grey group order-2 lg:order-none lg:flex-[65%]"
+          className="bg-white dark:bg-grey group order-2 md:order-none md:flex-[65%]"
         >
           {/* image */}
           <img
@@ -37,7 +37,7 @@ const MainInterior = () => {
         </Link>
 
         {/* sidebar */}
-        <aside className="bg-secondary dark:bg-primary order-1 lg:order-none lg:flex-[35%]">
+        <aside className="bg-secondary dark:bg-primary order-1 md:order-none md:flex-[35%]">
           <MainInteriorSidebar />
         </aside>
       </div>

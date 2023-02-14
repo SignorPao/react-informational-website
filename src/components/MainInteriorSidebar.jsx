@@ -8,7 +8,7 @@ import { mainInteriorSidebarData } from "../data/data";
 
 const MainInteriorSidebar = () => {
   return (
-    <div className="p-4 w-full max-h-fit flex flex-col items-center justify-center">
+    <div className="p-3 lg:p-6 w-full max-h-fit flex flex-col items-center justify-center">
       <h2 className="subTitle mb-4 xl:mb-8">Актуальные статьи</h2>
 
       {/* list */}
@@ -30,6 +30,7 @@ const MainInteriorSidebar = () => {
                     className="max-w-full object-cover"
                   />
                 </div>
+                
                 <h3 className="sidebarTitle articleHover group-hover:underline-offset-4 decoration-1">
                   {title}
                 </h3>
