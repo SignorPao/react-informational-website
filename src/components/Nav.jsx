@@ -105,7 +105,7 @@ const Nav = () => {
               const { link, path } = item;
 
               return (
-                <li key={index} className="">
+                <li key={index}>
                   <NavLink
                     to={`${path}`}
                     className={({ isActive }) =>

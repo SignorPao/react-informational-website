@@ -81,8 +81,9 @@ export const navData = [
 // main data
 export const mainInteriorData = {
   img: mainInterior,
+  pretitle: "Интерьер",
   title: "Выбираем потолок",
-  text: "Решили установить подвесной потолок? Но не можете определить какой именно выбрать? Тогда эта статья специально для вас. В ней вы узнаете ответы на основные вопросы",
+  text: "Решили установить подвесной потолок? Но не можете определить какой именно выбрать? Тогда эта статья специально для вас. В ней вы узнаете ответы на основные вопросы.",
   link: "",
 };
 
@@ -107,16 +108,19 @@ export const mainInteriorSidebarData = [
 export const mainGardenData = [
   {
     img: mainGarden1,
+    pretitle: "Сад и огород",
     title: "Подготовка почвы для посева",
     link: "",
   },
   {
     img: mainGarden2,
+    pretitle: "Сад и огород",
     title: "Выбор теплицы",
     link: "",
   },
   {
     img: mainGarden3,
+    pretitle: "Сад и огород",
     title: "Подготовка плодовых деревьев и кустарников к зиме",
     link: "",
   },

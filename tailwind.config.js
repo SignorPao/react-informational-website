@@ -22,19 +22,19 @@ module.exports = {
         "2xl": "1560px",
       },
       colors: {
-        primary: "#3D5A80",
-        // primary: "#326789",
+        // primary: "#3D5A80",
+        primary: "#326789",
         // primary: "#244D61",
         // primary: "#1F6CAB",
 
-        secondary: "#98C1D9",
-        // secondary: "#78A6C8",
+        // secondary: "#98C1D9",
+        secondary: "#78A6C8",
         // secondary: "#5689C0",
 
         secondaryLight: "#E0FBFC",
 
-        accent: "#EE6C4D",
-        // accent: "#E65C4F",
+        // accent: "#EE6C4D",
+        accent: "#E65C4F",
         // accent: "#75E2FF",
         // accent: "#00E6F6",
 
@@ -57,11 +57,11 @@ module.exports = {
         // light: "#DDD",
         // light: "#E9EEF2",
 
-        // lightGrey: "#F2F4F5",
+        lightGrey: "#F2F4F5",
         // lightGrey: "#EAEBED",
 
         // grey: "#787A91",
-        // grey: "#444",
+        grey: "#444",
         // grey: "#393E46",
         // grey: "#30475E",
         // grey: "#2C3333",

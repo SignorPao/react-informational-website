@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply font-secondary;
+    @apply font-secondary bg-lightGrey text-dark dark:bg-dark dark:text-light;
   }
   .wrapper {
     @apply container mx-auto;
@@ -16,12 +16,30 @@
   .section {
     @apply py-8 lg:py-16;
   }
-  .title {
-    @apply font-primary;
-  }
   /* lock body scroll */
   .lock {
     @apply overflow-hidden;
+  }
+  .pretitle {
+    @apply uppercase font-semibold text-secondary text-[9px] lg:text-xs;
+  }
+  .title {
+    @apply font-primary font-semibold text-sm lg:text-xl xl:text-3xl dark:text-light;
+  }
+  .subTitle {
+    @apply font-primary font-semibold text-sm lg:text-lg xl:text-2xl;
+  }
+  .sidebarTitle {
+    @apply font-medium text-sm lg:text-base xl:text-lg;
+  }
+  .articleHover {
+    @apply decoration-[1.2px] group-hover:underline group-hover:underline-offset-8;
+  }
+  .articleText {
+    @apply text-dark/70 dark:text-light/70 text-xs lg:text-base;
+  }
+  .sectionTitle {
+    @apply text-dark/80 text-sm lg:text-2xl xl:text-4xl hover:underline hover:underline-offset-8 decoration-[1.2px] w-max self-center;
   }
 }
 
@@ -90,7 +108,7 @@ html.dark ::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #EE6C4D;
+  color: #ee6c4d;
 }
 
 .autoplay-progress svg {
@@ -102,7 +120,7 @@ html.dark ::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #EE6C4D;
+  stroke: #ee6c4d;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
