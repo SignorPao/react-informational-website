@@ -20,6 +20,9 @@
   .lock {
     @apply overflow-hidden;
   }
+  .heroTitle {
+    @apply text-3xl lg:text-6xl xl:text-9xl text-accent font-semibold;
+  }
   .pretitle {
     @apply uppercase font-semibold text-secondary text-[9px] lg:text-xs;
   }

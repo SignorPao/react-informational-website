@@ -8,7 +8,7 @@ import { mainEducationData } from "../data/data";
 
 const MainEducation = () => {
   // destructure data
-  const { img, pretitle, title, link } = mainEducationData;
+  const { img, pretitle, title, text, link } = mainEducationData;
 
   return (
     <section className="wrapper section">
@@ -32,6 +32,7 @@ const MainEducation = () => {
           </h3>
 
           <h2 className="title articleHover">{title}</h2>
+          <p className="articleText">{text}</p>
         </div>
       </Link>
     </section>

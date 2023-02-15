@@ -111,8 +111,8 @@ const Nav = () => {
                     className={({ isActive }) =>
                       // isActive ? "border-b-[3px] border-accent" : "navLink"
                       isActive
-                        ? "text-primary dark:text-secondaryLight h-full flex items-center border-b-[4px] border-b-accent"
-                        : "text-secondary hover:text-primary dark:hover:text-secondaryLight transition-all duration-300 h-full flex items-center border-b-[4px] border-transparent"
+                        ? "text-accent h-full flex items-center border-b-[4px] border-b-accent"
+                        : "text-secondary hover:text-accent dark:hover:text-accent transition-all duration-300 h-full flex items-center border-b-[4px] border-transparent"
                     }
                   >
                     {link}

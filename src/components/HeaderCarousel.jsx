@@ -34,19 +34,19 @@ const HeaderCarousel = () => {
     >
       <SwiperSlide className="bg-hero1 bg-cover bg-bottom bg-no-repeat w-full h-full">
         <div className="w-full h-full flex items-center justify-center">
-          <h1 className="text-3xl lg:text-6xl xl:text-9xl text-accent font-semibold">Интерьер</h1>
+          <h1 className="heroTitle">Интерьер</h1>
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="bg-hero2 bg-cover bg-bottom bg-no-repeat w-full h-full">
         <div className="w-full h-full flex items-center justify-center">
-          <h1 className="text-3xl lg:text-6xl xl:text-9xl text-accent font-semibold">Сад и огород</h1>
+          <h1 className="heroTitle">Сад и огород</h1>
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="bg-hero3 bg-cover bg-bottom bg-no-repeat w-full h-full">
         <div className="w-full h-full flex items-center justify-center">
-          <h1 className="text-3xl lg:text-6xl xl:text-9xl text-accent font-semibold">Стройматериалы</h1>
+          <h1 className="heroTitle">Стройматериалы</h1>
         </div>
       </SwiperSlide>
 
