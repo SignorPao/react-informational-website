@@ -1,16 +1,19 @@
+// images
+
 // interior articles
 export const interiorArticles = [
+  // ARTICLE 1 START
   {
-    id: "interior article one",
-    title: "Interior1",
-    tagString: "interior floor",
+    id: "Выбираем потолок",
+    title: "Выбираем потолок",
+    tagString: "интерьер потолок",
     tags: [
       {
-        tag: "interior",
+        tag: "интерьер",
         tagLink: "#",
       },
       {
-        tag: "floor",
+        tag: "потолок",
         tagLink: "#",
       },
     ],
@@ -18,7 +21,9 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+  // ARTICLE 1 END
 
+  // ARTICLE 2 START
   {
     id: "interior article two",
     title: "Interior2",
@@ -37,7 +42,9 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+  // ARTICLE 2 END
 
+  // ARTICLE 3 START
   {
     id: "interior article three",
     title: "Interior3",
@@ -56,7 +63,9 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+  // ARTICLE 3 END
   
+  // ARTICLE 4 START
   {
     id: "interior article four",
     title: "Interior4",
@@ -75,4 +84,5 @@ export const interiorArticles = [
     text: "interior text",
     link: "Читать...",
   },
+  // ARTICLE 4 END
 ];

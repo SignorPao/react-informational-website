@@ -49,7 +49,7 @@ const Materials = () => {
                   </div>
 
                   {/* text */}
-                  <p>{text}</p>
+                  {/* <p>{text}</p> */}
 
                   {/* link to full article */}
                   <Link to={`/materials/${id}`}>{link}</Link>

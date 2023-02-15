@@ -9,6 +9,7 @@ import { SearchContext } from "../contexts/SearchContext";
 // import data
 import { gardenArticles } from "../data/dataGarden";
 import { interiorArticles } from "../data/dataInterior";
+import { materialsArticles } from "../data/dataMaterials";
 
 const SearchResults = () => {
   const [searchField, setSearchField] = useState("");
@@ -20,7 +21,11 @@ const SearchResults = () => {
   };
 
   // all data combined
-  const allArticles = [...gardenArticles, ...interiorArticles];
+  const allArticles = [
+    ...gardenArticles,
+    ...interiorArticles,
+    ...materialsArticles,
+  ];
 
   // filtered data
   const filteredArticles = allArticles.filter((article) => {

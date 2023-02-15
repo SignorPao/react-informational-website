@@ -12,13 +12,18 @@ import { SearchContext } from "../contexts/SearchContext";
 // import data
 import { gardenArticles } from "../data/dataGarden";
 import { interiorArticles } from "../data/dataInterior";
+import { materialsArticles } from "../data/dataMaterials";
 
 const Search = ({ click }) => {
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
 
   // all data combined
-  const allArticles = [...gardenArticles, ...interiorArticles];
+  const allArticles = [
+    ...gardenArticles,
+    ...interiorArticles,
+    ...materialsArticles,
+  ];
 
   // context
   const searchContext = useContext(SearchContext);

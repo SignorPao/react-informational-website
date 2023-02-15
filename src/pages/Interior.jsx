@@ -49,7 +49,7 @@ const Interior = () => {
                   </div>
 
                   {/* text */}
-                  <p>{text}</p>
+                  {/* <p>{text}</p> */}
 
                   {/* link to full article */}
                   <Link to={`/interior/${id}`}>{link}</Link>
