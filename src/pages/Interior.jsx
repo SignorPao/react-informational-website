@@ -6,6 +6,9 @@ import { interiorArticles } from "../data/dataInterior";
 // react-router
 import { Link } from "react-router-dom";
 
+// hash link
+import { HashLink } from "react-router-hash-link";
+
 const Interior = () => {
   // title of the document
   useEffect(() => {
@@ -13,54 +16,88 @@ const Interior = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-8 lg:mb-16">
       {/* page header */}
-      <div className="h-screen bg-interior bg-no-repeat bg-bottom bg-cover flex items-center justify-center">
+      <div className="h-[40vh] md:h-[90vh] lg:h-[40vh] xl:h-screen bg-interior bg-no-repeat bg-bottom bg-cover flex items-center justify-center">
         <h1 className="heroTitle">Интерьер</h1>
       </div>
 
       {/* articles */}
       <div className="wrapper">
         {/* article top */}
-        <div className="flex items-center justify-center section">
+        <div className="flex items-center justify-center section md:pb-0 lg:pb-8">
           <h2 className="text-dark/80 text-sm lg:text-2xl xl:text-4xl dark:text-light">
             Делаем интерьер правильно
           </h2>
         </div>
 
         {/* article body */}
-        <div className="flex flex-col gap-y-6 md:flex-row md:items-start md:gap-x-4 lg:gap-x-6 h-[2000px]">
+        <div className="flex flex-col gap-y-6 md:flex-row md:items-start md:gap-x-4 lg:gap-x-6">
           {/* articles list */}
-          <ul className="flex flex-col gap-y-6 order-2 md:order-none md:flex-[65%]">
+          <div className="flex flex-col gap-y-8 order-2 md:order-none md:flex-[65%] md:divide-y-[1px] divide-dark/20 dark:divide-light/20">
             {interiorArticles.map((item, index) => {
               // destructure item
-              const { id, title, tags, text, link } = item;
+              const { id, img, pretitle, title, tags, } = item;
 
               return (
-                <li key={index}>
-                  {/* title */}
-                  <h3>{title}</h3>
-
-                  {/* tags */}
-                  <div className="flex gap-x-2">
-                    {tags.map((item, index) => {
-                      return <div key={index}>{item.tag}</div>;
-                    })}
+                <Link
+                  to={`/interior/${id}`}
+                  id={id}
+                  key={index}
+                  className="flex flex-col gap-y-4 md:flex-row md:gap-x-2 lg:gap-x-4 xl:gap-x-8 group md:pt-8"
+                >
+                  {/* image */}
+                  <div className="md:flex-[35%] h-[200px] md:h-[100px] lg:h-[150px] xl:h-[200px]">
+                    <img
+                      src={img}
+                      alt="интерьер"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   {/* text */}
-                  {/* <p>{text}</p> */}
+                  <div className="flex-[65%] flex flex-col gap-y-2 lg:gap-y-4">
+                    <h3 className="pretitle">{pretitle}</h3>
+                    {/* title */}
+                    <h2 className="title articleHover">{title}</h2>
 
-                  {/* link to full article */}
-                  <Link to={`/interior/${id}`}>{link}</Link>
-                </li>
+                    {/* tags */}
+                    <div className="flex gap-1 items-center flex-wrap">
+                      {tags.map((item, index) => {
+                        return (
+                          <div
+                            key={index}
+                            className="text-primary/80 dark:text-primary bg-secondary/30 dark:bg-secondary/20 text-[10px] xl:text-xs px-2 py-1 rounded-sm"
+                          >
+                            {item.tag}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </Link>
               );
             })}
-          </ul>
+          </div>
 
           {/* sidebar */}
-          <aside className="bg-secondary dark:bg-primary order-1 md:order-none md:flex-[35%] md:sticky top-16 h-[300px]">
-            sidebar
+          <aside className="bg-secondary dark:bg-primary order-1 md:order-none md:flex-[35%] md:sticky top-16 md:mt-8 p-3 lg:p-6">
+            <div className="flex flex-col gap-y-2">
+              {interiorArticles.map((item, index) => {
+                // destructure item
+                const { id, title } = item;
+
+                return (
+                  <HashLink
+                    to={`/interior#${id}`}
+                    key={index}
+                    className="sidebarTitle hover:underline hover:underline-offset-4 decoration-1"
+                  >
+                    {title}
+                  </HashLink>
+                );
+              })}
+            </div>
           </aside>
         </div>
       </div>

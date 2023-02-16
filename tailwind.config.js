@@ -75,6 +75,7 @@ module.exports = {
         // heroMobile: "url('assets/mainPage/heroMobile-1.webp')",
         mainCountryHouse: "url('assets/mainPage/mainCountryHouse.webp')",
         interior: "url('assets/otherPages/interiorHero.webp')",
+        garden: "url('assets/otherPages/gardenHero.webp')",
       },
     },
   },

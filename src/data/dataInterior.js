@@ -1,12 +1,18 @@
 // images
+import mainInterior from "../assets/mainPage/mainInterior.webp";
+import mainInteriorSidebar1 from "../assets/mainPage/mainInteriorSidebar1.webp";
+import mainInteriorSidebar2 from "../assets/mainPage/mainInteriorSidebar2.webp";
+import mainInteriorSidebar3 from "../assets/mainPage/mainInteriorSidebar3.webp";
 
 // interior articles
 export const interiorArticles = [
   // ARTICLE 1 START
   {
     id: "Выбираем потолок",
+    img: mainInterior,
+    pretitle: "Интерьер",
     title: "Выбираем потолок",
-    tagString: "интерьер потолок",
+    tagString: "интерьер потолок потолки подвесной",
     tags: [
       {
         tag: "интерьер",
@@ -16,73 +22,111 @@ export const interiorArticles = [
         tag: "потолок",
         tagLink: "#",
       },
+      {
+        tag: "потолки",
+        tagLink: "#",
+      },
+      {
+        tag: "подвесной",
+        tagLink: "#",
+      },
     ],
-    linkToArticle: "/interior/interior article one",
+    linkToArticle: "/interior/Выбираем потолок",
     text: "interior text",
-    link: "Читать...",
   },
   // ARTICLE 1 END
 
   // ARTICLE 2 START
   {
-    id: "interior article two",
-    title: "Interior2",
-    tagString: "interior walls",
+    id: "Инструкция по выбору обоев",
+    img: mainInteriorSidebar1,
+    pretitle: "Интерьер",
+    title: "Инструкция по выбору обоев",
+    tagString: "интерьер обои отделка стены",
     tags: [
       {
-        tag: "interior",
+        tag: "интерьер",
         tagLink: "#",
       },
       {
-        tag: "walls",
+        tag: "обои",
+        tagLink: "#",
+      },
+      {
+        tag: "отделка",
+        tagLink: "#",
+      },
+      {
+        tag: "стены",
         tagLink: "#",
       },
     ],
-    linkToArticle: "/interior/interior article two",
+    linkToArticle: "/interior/Инструкция по выбору обоев",
     text: "interior text",
-    link: "Читать...",
   },
   // ARTICLE 2 END
 
   // ARTICLE 3 START
   {
-    id: "interior article three",
-    title: "Interior3",
-    tagString: "interior window",
+    id: "Выбираем межкомнатные двери",
+    img: mainInteriorSidebar2,
+    pretitle: "Интерьер",
+    title: "Выбираем межкомнатные двери",
+    tagString: "интерьер дверь двери межкомнатные",
     tags: [
       {
-        tag: "interior",
+        tag: "интерьер",
         tagLink: "#",
       },
       {
-        tag: "window",
+        tag: "дверь",
+        tagLink: "#",
+      },
+      {
+        tag: "двери",
+        tagLink: "#",
+      },
+      {
+        tag: "межкомнатные",
         tagLink: "#",
       },
     ],
-    linkToArticle: "/interior/interior article three",
+    linkToArticle: "/interior/Выбираем межкомнатные двери",
     text: "interior text",
-    link: "Читать...",
   },
   // ARTICLE 3 END
-  
+
   // ARTICLE 4 START
   {
-    id: "interior article four",
-    title: "Interior4",
-    tagString: "interior ceiling",
+    id: "Виниловая плитка",
+    img: mainInteriorSidebar3,
+    pretitle: "Интерьер",
+    title: "Виниловая плитка",
+    tagString: "интерьер отделка пол виниловая плитка",
     tags: [
       {
-        tag: "interior",
+        tag: "интерьер",
         tagLink: "#",
       },
       {
-        tag: "ceiling",
+        tag: "отделка",
+        tagLink: "#",
+      },
+      {
+        tag: "пол",
+        tagLink: "#",
+      },
+      {
+        tag: "виниловая",
+        tagLink: "#",
+      },
+      {
+        tag: "плитка",
         tagLink: "#",
       },
     ],
-    linkToArticle: "/interior/interior article four",
+    linkToArticle: "/interior/Виниловая плитка",
     text: "interior text",
-    link: "Читать...",
   },
   // ARTICLE 4 END
 ];

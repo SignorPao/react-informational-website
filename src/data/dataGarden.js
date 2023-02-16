@@ -1,75 +1,109 @@
+// images
+import mainGarden1 from "../assets/mainPage/mainGarden1.webp";
+import mainGarden2 from "../assets/mainPage/mainGarden2.webp";
+import mainGarden3 from "../assets/mainPage/mainGarden3.webp";
+
 // garden articles
 export const gardenArticles = [
+  // ARTICLE 1 START
   {
-    id: "garden article one",
-    title: "Garden1",
-    tagString: "garden plants flowers",
+    id: "Подготовка почвы для посева",
+    img: mainGarden1,
+    pretitle: "Сад и огород",
+    title: "Подготовка почвы для посева",
+    tagString: "грунт почва посев грядка урожай теплица перегной",
     tags: [
       {
-        tag: "garden",
+        tag: "грунт",
         tagLink: "#",
       },
       {
-        tag: "plants",
+        tag: "почва",
         tagLink: "#",
       },
       {
-        tag: "flowers",
+        tag: "посев",
+        tagLink: "#",
+      },
+      {
+        tag: "грядка",
+        tagLink: "#",
+      },
+      {
+        tag: "урожай",
+        tagLink: "#",
+      },
+      {
+        tag: "теплица",
+        tagLink: "#",
+      },
+      {
+        tag: "перегной",
         tagLink: "#",
       },
     ],
-    linkToArticle: "/garden/garden article one",
+    linkToArticle: "/garden/Подготовка почвы для посева",
     text: "garden text",
-    link: "Читать...",
   },
+  // ARTICLE 1 END
 
+  // ARTICLE 2 START
   {
-    id: "garden2",
-    title: "Garden2",
-    tagString: "garden plants flowers trees",
+    id: "Выбор теплицы",
+    img: mainGarden2,
+    pretitle: "Сад и огород",
+    title: "Выбор теплицы",
+    tagString: "теплица парник",
     tags: [
       {
-        tag: "garden",
+        tag: "теплица",
         tagLink: "#",
       },
       {
-        tag: "plants",
-        tagLink: "#",
-      },
-      {
-        tag: "flowers",
-        tagLink: "#",
-      },
-      {
-        tag: "trees",
+        tag: "парник",
         tagLink: "#",
       },
     ],
-    linkToArticle: "/garden/garden2",
+    linkToArticle: "/garden/Выбор теплицы",
     text: "garden text",
-    link: "Читать...",
   },
-  
+  // ARTICLE 2 END
+
+  // ARTICLE 3 START
   {
-    id: "garden3",
-    title: "Garden3",
-    tagString: "garden plants flowers",
+    id: "Подготовка плодовых деревьев и кустарников к зиме",
+    img: mainGarden3,
+    pretitle: "Сад и огород",
+    title: "Подготовка плодовых деревьев и кустарников к зиме",
+    tagString: "осень зима плодовые кустарники деревья урожай",
     tags: [
       {
-        tag: "garden",
+        tag: "осень",
         tagLink: "#",
       },
       {
-        tag: "plants",
+        tag: "зима",
         tagLink: "#",
       },
       {
-        tag: "flowers",
+        tag: "плодовые",
+        tagLink: "#",
+      },
+      {
+        tag: "кустарники",
+        tagLink: "#",
+      },
+      {
+        tag: "деревья",
+        tagLink: "#",
+      },
+      {
+        tag: "урожай",
         tagLink: "#",
       },
     ],
-    linkToArticle: "/garden/garden3",
+    linkToArticle: "/garden/Подготовка плодовых деревьев и кустарников к зиме",
     text: "garden text",
-    link: "Читать...",
   },
+  // ARTICLE 3 END
 ];
