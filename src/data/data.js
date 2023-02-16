@@ -1,8 +1,4 @@
 // images
-// import Header1 from "../assets/mainPage/hero-1.webp";
-// import Header2 from "../assets/mainPage/hero-2.webp";
-// import Header3 from "../assets/mainPage/hero-3.webp";
-
 import mainInterior from "../assets/mainPage/mainInterior.webp";
 import mainInteriorSidebar1 from "../assets/mainPage/mainInteriorSidebar1.webp";
 import mainInteriorSidebar2 from "../assets/mainPage/mainInteriorSidebar2.webp";
@@ -88,24 +84,24 @@ export const mainInteriorData = {
   pretitle: "Интерьер",
   title: "Выбираем потолок",
   text: "Решили установить подвесной потолок? Но не можете определить какой именно выбрать? Тогда эта статья специально для вас. В ней вы узнаете ответы на основные вопросы.",
-  link: "",
+  link: "/interior/Выбираем потолок",
 };
 
 export const mainInteriorSidebarData = [
   {
     img: mainInteriorSidebar1,
     title: "Инструкция по выбору обоев",
-    link: "",
+    link: "/interior/Инструкция по выбору обоев",
   },
   {
     img: mainInteriorSidebar2,
     title: "Выбираем межкомнатные двери",
-    link: "",
+    link: "/interior/Выбираем межкомнатные двери",
   },
   {
     img: mainInteriorSidebar3,
     title: "Виниловая плитка",
-    link: "",
+    link: "/interior/Виниловая плитка",
   },
 ];
 
@@ -114,19 +110,19 @@ export const mainGardenData = [
     img: mainGarden1,
     pretitle: "Сад и огород",
     title: "Подготовка почвы для посева",
-    link: "",
+    link: "/garden/Подготовка почвы для посева",
   },
   {
     img: mainGarden2,
     pretitle: "Сад и огород",
     title: "Выбор теплицы",
-    link: "",
+    link: "/garden/Выбор теплицы",
   },
   {
     img: mainGarden3,
     pretitle: "Сад и огород",
     title: "Подготовка плодовых деревьев и кустарников к зиме",
-    link: "",
+    link: "/garden/Подготовка плодовых деревьев и кустарников к зиме",
   },
 ];
 
@@ -135,24 +131,24 @@ export const mainMaterialsData = {
   pretitle: "Стройматериалы",
   title: "Клееный брус",
   text: "Клееный профилированный брус — один из самых современных и востребованных строительных и столярных материалов. Технология, разработанная в 1960-1970 годах, представляет собой склеивание-спрессовывание досок различных хвойных пород",
-  link: "",
+  link: "/materials/Клееный брус",
 };
 
 export const mainMaterialsSidebarData = [
   {
     img: mainMaterialsSidebar1,
     title: "5 самых популярных строительных материалов",
-    link: "",
+    link: "/materials/5 самых популярных строительных материалов",
   },
   {
     img: mainMaterialsSidebar2,
     title: "Газоблоки",
-    link: "",
+    link: "/materials/Газоблоки",
   },
   {
     img: mainMaterialsSidebar3,
     title: "Древесные плиты. Характеристики, область применения",
-    link: "",
+    link: "/materials/Древесные плиты. Характеристики, область применения",
   },
 ];
 
@@ -161,19 +157,19 @@ export const mainPlumbingData = [
     img: mainPlumbing1,
     pretitle: "Сантехника",
     title: "Выбираем ванну",
-    link: "",
+    link: "/plumbing/Выбираем ванну",
   },
   {
     img: mainPlumbing2,
     pretitle: "Сантехника",
     title: "Выбираем мойку для кухни",
-    link: "",
+    link: "/plumbing/Выбираем мойку для кухни",
   },
   {
     img: mainPlumbing3,
     pretitle: "Сантехника",
     title: "Выбор смесителя для кухни",
-    link: "",
+    link: "/plumbing/Выбор смесителя для кухни",
   },
 ];
 
@@ -182,7 +178,7 @@ export const mainCountryHouseData = {
   pretitle: "Дача",
   title: "Искусственный водоем своими руками",
   text: "Искусственный пруд на вашем приусадебном участке создаст неповторимую атмосферу гармонии и безмятежности. Привлечет полезных насекомых и птиц.",
-  link: "",
+  link: "/country/Искусственный водоем своими руками",
 };
 
 export const mainEducationData = {
@@ -190,7 +186,7 @@ export const mainEducationData = {
   pretitle: "Самообразование",
   title: "Выбираем специализацию в программировании",
   text: "Каждому, кто решил изучать программирование, следует в первую очередь определиться со специализацией. Учитывая свои сильные и слабые стороны, свои интересы, выяснить подойдет ли выбранная специальность. Статья дает краткие описания самых популярных направлений в программировании, среди которых каждый выберет подходящий путь.",
-  link: "",
+  link: "/interior/Выбираем специализацию в программировании",
 };
 
 // footer data

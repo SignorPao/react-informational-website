@@ -19,7 +19,7 @@ const Interior = () => {
     <div className="flex flex-col mb-8 lg:mb-16">
       {/* page header */}
       <div className="h-[40vh] md:h-[90vh] lg:h-[40vh] xl:h-screen bg-interior bg-no-repeat bg-bottom bg-cover flex items-center justify-center">
-        <h1 className="heroTitle">Интерьер</h1>
+        <h1 className="heroTitle text-center">Интерьер</h1>
       </div>
 
       {/* articles */}

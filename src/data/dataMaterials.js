@@ -1,5 +1,13 @@
 // images
 import mainMaterialsSidebar1 from "../assets/mainPage/mainMaterialsSidebar1.webp";
+import mainMaterials from "../assets/mainPage/mainMaterials.webp";
+import mainMaterialsSidebar2 from "../assets/mainPage/mainMaterialsSidebar2.webp";
+import mainMaterialsSidebar3 from "../assets/mainPage/mainMaterialsSidebar3.webp";
+import pyatsamyh1 from "../assets/otherPages/materials/5_samyh.webp";
+import pyatsamyh2 from "../assets/otherPages/materials/5_samyh_2.webp";
+import pyatsamyh3 from "../assets/otherPages/materials/5_samyh_3.webp";
+import pyatsamyh4 from "../assets/otherPages/materials/5_samyh_4.webp";
+import pyatsamyh5 from "../assets/otherPages/materials/5_samyh_5.webp";
 
 // materials articles
 export const materialsArticles = [
@@ -7,6 +15,7 @@ export const materialsArticles = [
   {
     id: "5 самых популярных строительных материалов",
     img: mainMaterialsSidebar1,
+    pretitle: "Стройматериалы",
     title: "5 самых популярных строительных материалов",
     tagString: "бетон древесина сталь кирпич камень",
     tags: [
@@ -33,18 +42,14 @@ export const materialsArticles = [
     ],
     linkToArticle: "/materials/5 самых популярных строительных материалов",
     text: [
-      // {
-      //   attribute: "title",
-      //   content: "title",
-      // },
-      // {
-      //   attribute: "image",
-      //   content: mainMaterialsSidebar1,
-      // },
       {
         attribute: "paragraph",
         content:
           "Для различных видов строительства применяются различные строительные материалы. Каждый из строительных материалов имеет разную прочность, стоимость, долговечность и вес, что делает его подходящим для определенных целей. Пять наиболее популярных материалов это: природные, дерево и камень, и искусственные, бетон, кирпич и сталь.",
+      },
+      {
+        attribute: "image",
+        content: pyatsamyh1,
       },
       {
         attribute: "title",
@@ -69,6 +74,10 @@ export const materialsArticles = [
         ],
       },
       {
+        attribute: "image",
+        content: pyatsamyh2,
+      },
+      {
         attribute: "title",
         content: "2. Камень",
       },
@@ -88,6 +97,10 @@ export const materialsArticles = [
             item: "Разные породы камня, обладают разными характеристиками: внешний вид, плотность, твердость и другие.",
           },
         ],
+      },
+      {
+        attribute: "image",
+        content: pyatsamyh3,
       },
       {
         attribute: "title",
@@ -119,6 +132,10 @@ export const materialsArticles = [
         ],
       },
       {
+        attribute: "image",
+        content: pyatsamyh4,
+      },
+      {
         attribute: "title",
         content: "4. Кирпич",
       },
@@ -143,6 +160,10 @@ export const materialsArticles = [
             item: "Долговечность кладки зависит от качества раствора и мастерства изготовления",
           },
         ],
+      },
+      {
+        attribute: "image",
+        content: pyatsamyh5,
       },
       {
         attribute: "title",
@@ -171,7 +192,113 @@ export const materialsArticles = [
         ],
       },
     ],
-    link: "Читать...",
   },
   // ARTICLE 1 END
+
+  // ARTICLE 2 START
+  {
+    id: "Клееный брус",
+    img: mainMaterials,
+    pretitle: "Стройматериалы",
+    title: "Клееный брус",
+    tagString: "клееный брус профилированный древесина",
+    tags: [
+      {
+        tag: "клееный",
+        tagLink: "#",
+      },
+      {
+        tag: "брус",
+        tagLink: "#",
+      },
+      {
+        tag: "профилированный",
+        tagLink: "#",
+      },
+      {
+        tag: "древесина",
+        tagLink: "#",
+      },
+    ],
+    linkToArticle: "/materials/Клееный брус",
+    // text: "text",
+  },
+  // ARTICLE 2 END
+
+  // ARTICLE 3 START
+  {
+    id: "Газоблоки",
+    img: mainMaterialsSidebar2,
+    pretitle: "Стройматериалы",
+    title: "Газоблоки",
+    tagString: "газоблок газобетон газосиликатный бетон",
+    tags: [
+      {
+        tag: "газоблок",
+        tagLink: "#",
+      },
+      {
+        tag: "газобетон",
+        tagLink: "#",
+      },
+      {
+        tag: "газосиликатный",
+        tagLink: "#",
+      },
+      {
+        tag: "бетон",
+        tagLink: "#",
+      },
+    ],
+    linkToArticle: "/materials/Газоблоки",
+    // text: "text",
+  },
+  // ARTICLE 3 END
+
+  // ARTICLE 4 START
+  {
+    id: "Древесные плиты. Характеристики, область применения",
+    img: mainMaterialsSidebar3,
+    pretitle: "Стройматериалы",
+    title: "Древесные плиты. Характеристики, область применения",
+    tagString: "дсп двп лдф мдф осп отделка древесная плита",
+    tags: [
+      {
+        tag: "дсп",
+        tagLink: "#",
+      },
+      {
+        tag: "двп",
+        tagLink: "#",
+      },
+      {
+        tag: "лдф",
+        tagLink: "#",
+      },
+      {
+        tag: "мдф",
+        tagLink: "#",
+      },
+      {
+        tag: "осп",
+        tagLink: "#",
+      },
+      {
+        tag: "отделка",
+        tagLink: "#",
+      },
+      {
+        tag: "древесная",
+        tagLink: "#",
+      },
+      {
+        tag: "плита",
+        tagLink: "#",
+      },
+    ],
+    linkToArticle:
+      "/materials/Древесные плиты. Характеристики, область применения",
+    // text: "text",
+  },
+  // ARTICLE 4 END
 ];
