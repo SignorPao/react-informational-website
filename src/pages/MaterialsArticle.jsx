@@ -22,9 +22,9 @@ const MaterialsArticle = () => {
   }, []);
 
   return (
-    <div className="px-4 mx-auto md:px-0 md:w-2/3 xl:w-1/2 flex flex-col items-center justify-center gap-y-6 pb-12 mt-16 bg-white dark:bg-grey">
+    <article className="px-4 mx-auto md:px-0 md:w-2/3 xl:w-1/2 flex flex-col items-center justify-center gap-y-6 pb-12 mt-16 bg-white dark:bg-grey">
       {/* image */}
-      <div className="w-full h-[30vh] md:h-[60vh] lg:h-[30vh] xl:h-[60vh]">
+      <div className="w-screen md:w-full h-[30vh] md:h-[60vh] lg:h-[30vh] xl:h-[60vh]">
         <img
           src={img}
           alt="строительные материалы"
@@ -56,16 +56,18 @@ const MaterialsArticle = () => {
           const { attribute, content } = item;
 
           return (
-            <div key={index} className=''>
+            <div key={index} className="">
               {(() => {
                 switch (attribute) {
                   case "title":
-                    return <h2 className="text-2xl capitalize mt-4">{content}</h2>;
+                    return (
+                      <h2 className="px-4 text-center text-base lg:text-lg xl:text-2xl mt-4">{content}</h2>
+                    );
                   case "paragraph":
                     return <p>{content}</p>;
                   case "list":
                     return (
-                      <ul className="flex flex-col gap-y-1">
+                      <ul className="flex flex-col gap-y-1 -mt-2 xl:-mt-3">
                         {content.map((item, index) => {
                           return (
                             <li key={index} className="list-inside list-disc">
@@ -77,8 +79,12 @@ const MaterialsArticle = () => {
                     );
                   case "image":
                     return (
-                      <div className="w-full h-[30vh] mx-auto md:w-[50vw] lg:w-[40vw] xl:w-[30vw] md:h-[40vh] lg:h-[20vh] xl:h-[40vh] mt-6">
-                        <img src={content} alt="строительные материалы" className="w-full h-full object-cover" />
+                      <div className="w-full h-[30vh] mx-auto md:w-[50vw] lg:w-[40vw] xl:w-[30vw] md:h-[40vh] lg:h-[20vh] xl:h-[40vh] mt-6 -mb-2 lg:-mb-4">
+                        <img
+                          src={content}
+                          alt="строительные материалы"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                     );
                 }
@@ -87,7 +93,7 @@ const MaterialsArticle = () => {
           );
         })}
       </div>
-    </div>
+    </article>
   );
 };
 
