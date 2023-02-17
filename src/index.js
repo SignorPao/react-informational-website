@@ -18,6 +18,9 @@ import Education from "./pages/Education";
 import GardenArticle from "./pages/GardenArticle";
 import InteriorArticle from "./pages/InteriorArticle";
 import MaterialsArticle from "./pages/MaterialsArticle";
+import PlumbingArticle from "./pages/PlumbingArticle";
+import CountryHouseArticle from "./pages/CountryHouseArticle";
+import EducationArticle from "./pages/EducationArticle";
 
 // import search context provider
 import SearchContextProvider from "./contexts/SearchContext";
@@ -68,12 +71,24 @@ const router = createBrowserRouter([
         element: <Plumbing />,
       },
       {
+        path: "plumbing/:id",
+        element: <PlumbingArticle />,
+      },
+      {
         path: "country",
         element: <CountryHouse />,
       },
       {
+        path: "country/:id",
+        element: <CountryHouseArticle />,
+      },
+      {
         path: "education",
         element: <Education />,
+      },
+      {
+        path: "education/:id",
+        element: <EducationArticle />,
       },
     ],
   },

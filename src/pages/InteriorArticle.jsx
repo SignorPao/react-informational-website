@@ -56,7 +56,7 @@ const InteriorArticle = () => {
           const { attribute, content } = item;
 
           return (
-            <div key={index} className="">
+            <div key={index}>
               {(() => {
                 switch (attribute) {
                   case "title":
