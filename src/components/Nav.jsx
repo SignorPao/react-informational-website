@@ -164,7 +164,7 @@ const Nav = () => {
           <div
             className={`${
               searchBar ? "hidden md:flex" : "hidden"
-            } fixed top-0 left-0 bottom-0 right-0 z-10 bg-dark/90`}
+            } fixed top-0 left-0 bottom-0 right-0 z-10 bg-dark/95`}
           >
             <Search click={() => setSearchBar(!searchBar)} />
           </div>
