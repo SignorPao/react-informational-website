@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 // import search context
 import { SearchContext } from "../contexts/SearchContext";
 
+// icons
+import { FiSearch } from "react-icons/fi";
+
 const NavMobile = ({ click }) => {
   const [searchField, setSearchField] = useState("");
 
@@ -25,14 +28,14 @@ const NavMobile = ({ click }) => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center gap-y-10 bg-slate-600 text-white">
+    <div className="w-full h-full flex flex-col items-center justify-center gap-y-10 bg-primary text-white wrapper">
       {/* mobile search bar */}
-      <div className="flex gap-x-0 text-dark">
+      <div className="flex items-center justify-between bg-light text-dark w-full">
         <input
           type="text"
           autoComplete="off"
           placeholder="Поиск..."
-          className="py-2 px-3 outline-none focus:ring-0"
+          className="py-2 px-3 bg-transparent outline-none focus:ring-0 w-[80%] text-2xl"
           onChange={handleChange}
           onKeyDown={(event) => {
             if (event.key === "Enter") {
@@ -48,14 +51,14 @@ const NavMobile = ({ click }) => {
             click();
             searchQueryHandler();
           }}
-          className="bg-dark text-light flex items-center justify-center px-3"
+          className="text-dark flex items-center justify-center px-3"
         >
-          Поиск
+          <FiSearch className="text-2xl" />
         </Link>
       </div>
 
       {/* mobile menu */}
-      <ul className="flex flex-col justify-center items-center gap-y-10 text-2xl">
+      <ul className="flex flex-col justify-center items-start gap-y-10 text-2xl">
         {navData.map((item, index) => {
           // destructure item
           const { link, path } = item;

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 // react-router
 import { Link } from "react-router-dom";
@@ -10,14 +10,19 @@ import { SearchContext } from "../contexts/SearchContext";
 import { FiSearch } from "react-icons/fi";
 
 // import data
-import { gardenArticles } from "../data/dataGarden";
 import { interiorArticles } from "../data/dataInterior";
+import { gardenArticles } from "../data/dataGarden";
 import { materialsArticles } from "../data/dataMaterials";
 import { plumbingArticles } from "../data/dataPlumbing";
 import { countryHouseArticles } from "../data/dataCountryHouse";
 import { educationArticles } from "../data/dataEducation";
 
 const SearchResults = () => {
+  // title of the document
+  useEffect(() => {
+    document.title = "Результаты поиска || Mark Powell";
+  }, []);
+
   const [searchField, setSearchField] = useState("");
 
   // context

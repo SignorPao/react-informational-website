@@ -42,24 +42,24 @@ module.exports = {
         dark: "#171717",
         // dark: "#1B1C1E",
         // dark: "#1F1F1F",
-        // grey: "#2B2B2B",
-        grey: "#303030",
         // dark: "#222831",
         // dark: "#111315",
         // dark: "#21251F",
         // dark: "#14202E",
         // dark: "#132620",
         // dark: "#082A3A",
-
+        
         light: "#FFF",
         // light: "#EEE",
         // light: "#EDEDED",
         // light: "#DDD",
         // light: "#E9EEF2",
-
+        
         lightGrey: "#F2F4F5",
         // lightGrey: "#EAEBED",
-
+        
+        grey: "#303030",
+        // grey: "#2B2B2B",
         // grey: "#787A91",
         // grey: "#444",
         // grey: "#393E46",

@@ -25,20 +25,19 @@ const Footer = () => {
   const { logo, description, footerLinks } = footerData;
 
   return (
-    <div className="text-white bg-primary section">
+    <div className="text-white bg-secondary dark:bg-primary section">
       <div className="wrapper">
         {/* footer top */}
-        <div className="border-b py-8 flex flex-col lg:flex-row lg:justify-between">
-
+        <div className="border-b-[0.1px] border-light/30 py-8 flex flex-col md:flex-row md:gap-x-10 xl:gap-x-16 lg:justify-between">
           {/* logo & description */}
-          <div className="lg:flex-[30%] flex flex-col gap-y-4">
+          <div className="md:flex-[30%] flex flex-col gap-y-4">
             {/* logo */}
             <div className="text-accent font-primary text-lg font-bold uppercase">
               <HashLink to={"#up"}>{logo}</HashLink>
             </div>
 
             {/* description */}
-            <p>{description}</p>
+            <p className="text-xs lg:text-sm text-light/60">{description}</p>
           </div>
 
           {/* mobile accordion: mobile - show | desctop - hidden */}
@@ -73,7 +72,7 @@ const Footer = () => {
                             />
                           </svg>
                         </AccordionHeader>
-                        
+
                         <AccordionBody className="flex flex-col gap-y-2">
                           {subLinks.map((item, index) => {
                             // destructure sub link
@@ -81,7 +80,7 @@ const Footer = () => {
 
                             return (
                               <div key={index}>
-                                <Link to={`${path}`}>{link}</Link>
+                                <Link to={`${path}`} className='text-light/60'>{link}</Link>
                               </div>
                             );
                           })}
@@ -95,31 +94,37 @@ const Footer = () => {
           </div>
 
           {/* links */}
-          <div className="lg:flex-[60%] grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="md:flex-[60%] md:grid gap-x-6 gap-y-3 md:grid-cols-3">
             {footerLinks.map((item, index) => {
               // destructure item
               const { mainLink, mainPath, subLinks } = item;
 
               return (
-                <div
-                  key={index}
-                  className="hidden md:flex flex-col gap-y-2 lg:items-end"
-                >
-                  <div>
-                    <Link to={`${mainPath}`}>{mainLink}</Link>
-                    <ul>
-                      {subLinks.map((item, index) => {
-                        // destructure sub link
-                        const { link, path } = item;
+                <div key={index} className="hidden md:flex flex-col gap-y-2">
+                  {/* page link */}
+                  <Link
+                    to={`${mainPath}`}
+                    className="footerLink text-xs lg:text-sm"
+                  >
+                    {mainLink}
+                  </Link>
 
-                        return (
-                          <li key={index}>
-                            <Link to={`${path}`}>{link}</Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                  {/* articles links */}
+                  <ul className="flex flex-col gap-y-2">
+                    {subLinks.map((item, index) => {
+                      // destructure sub link
+                      const { link, path } = item;
+
+                      return (
+                        <li
+                          key={index}
+                          className="text-[10px] lg:text-xs text-light/60 footerLink"
+                        >
+                          <Link to={`${path}`}>{link}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
               );
             })}
@@ -127,7 +132,7 @@ const Footer = () => {
         </div>
 
         {/* footer bottom */}
-        <div className="flex justify-between py-4 text-xs">
+        <div className="flex justify-between py-4 text-[10px] lg:text-xs text-light/60">
           <div>
             &copy; {year} {logo}
           </div>

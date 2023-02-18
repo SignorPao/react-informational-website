@@ -200,16 +200,20 @@ export const footerData = {
       mainPath: "interior",
       subLinks: [
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбираем потолок",
+          path: "/interior/Выбираем потолок",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Инструкция по выбору обоев",
+          path: "/interior/Инструкция по выбору обоев",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбираем межкомнатные двери",
+          path: "/interior/Выбираем межкомнатные двери",
+        },
+        {
+          link: "Виниловая плитка",
+          path: "/interior/Виниловая плитка",
         },
       ],
     },
@@ -218,20 +222,16 @@ export const footerData = {
       mainPath: "garden",
       subLinks: [
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Подготовка почвы для посева",
+          path: "/garden/Подготовка почвы для посева",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбор теплицы",
+          path: "/garden/Выбор теплицы",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
-        },
-        {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Подготовка плодовых деревьев и кустарников к зиме",
+          path: "/garden/Подготовка плодовых деревьев и кустарников к зиме",
         },
       ],
     },
@@ -240,24 +240,20 @@ export const footerData = {
       mainPath: "materials",
       subLinks: [
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "5 самых популярных строительных материалов",
+          path: "/materials/5 самых популярных строительных материалов",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Клееный брус",
+          path: "/materials/Клееный брус",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Газоблоки",
+          path: "/materials/Газоблоки",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
-        },
-        {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Древесные плиты. Характеристики, область применения",
+          path: "/materials/Древесные плиты. Характеристики, область применения",
         },
       ],
     },
@@ -266,16 +262,16 @@ export const footerData = {
       mainPath: "plumbing",
       subLinks: [
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбираем ванну",
+          path: "/plumbing/Выбираем ванну",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбираем мойку для кухни",
+          path: "/plumbing/Выбираем мойку для кухни",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбор смесителя для кухни",
+          path: "/plumbing/Выбор смесителя для кухни",
         },
       ],
     },
@@ -284,20 +280,16 @@ export const footerData = {
       mainPath: "country",
       subLinks: [
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Искусственный водоем своими руками",
+          path: "/country/Искусственный водоем своими руками",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Описание бань и саун",
+          path: "/country/Описание бань и саун",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
-        },
-        {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбираем газонокосилку",
+          path: "/country/Выбираем газонокосилку",
         },
       ],
     },
@@ -306,16 +298,16 @@ export const footerData = {
       mainPath: "education",
       subLinks: [
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Выбираем специализацию в программировании",
+          path: "/education/Выбираем специализацию в программировании",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Собираем компьютер самостоятельно",
+          path: "/education/Собираем компьютер самостоятельно",
         },
         {
-          link: "SomeFooterSubLink",
-          path: "#",
+          link: "Как научиться программировать",
+          path: "/education/Как научиться программировать",
         },
       ],
     },

@@ -47,6 +47,9 @@
   .animation {
     @apply transition-all duration-300;
   }
+  .footerLink {
+    @apply hover:underline hover:underline-offset-4 hover:text-light animation w-fit;
+  }
 }
 
 html {
@@ -114,7 +117,7 @@ html.dark ::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #ee6c4d;
+  color: #00E6F6;
 }
 
 .autoplay-progress svg {
@@ -126,7 +129,7 @@ html.dark ::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #ee6c4d;
+  stroke: #00E6F6;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;

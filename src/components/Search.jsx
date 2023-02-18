@@ -26,8 +26,8 @@ const Search = ({ click }) => {
 
   // all data combined
   const allArticles = [
-    ...gardenArticles,
     ...interiorArticles,
+    ...gardenArticles,
     ...materialsArticles,
     ...plumbingArticles,
     ...countryHouseArticles,

@@ -22,20 +22,12 @@ const Nav = () => {
   // all nav states
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  // const [navState, isNavState] = useState(false);
 
   // navMobile state
   const [navMobile, setNavMobile] = useState(false);
 
   // search state
   const [searchBar, setSearchBar] = useState(false);
-
-  // scroll event (remove nav bg on the top)
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     window.scrollY > 1 ? isNavState(true) : isNavState(false);
-  //   });
-  // });
 
   // scroll event (scroll down - hide nav / scroll up - show nav)
   const controlNavbar = () => {
@@ -78,12 +70,6 @@ const Nav = () => {
     return;
   }, [searchBar]);
 
-  // ${
-  //   navState
-  //     ? "bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none"
-  //     : "bg-none dark:bg-dark dark:text-light"
-  // }
-
   return (
     <nav
       className={`${
@@ -109,7 +95,6 @@ const Nav = () => {
                   <NavLink
                     to={`${path}`}
                     className={({ isActive }) =>
-                      // isActive ? "border-b-[3px] border-accent" : "navLink"
                       isActive
                         ? "text-accent h-full flex items-center border-b-[4px] border-b-accent"
                         : "text-secondary hover:text-accent dark:hover:text-accent transition-all duration-300 h-full flex items-center border-b-[4px] border-transparent"
