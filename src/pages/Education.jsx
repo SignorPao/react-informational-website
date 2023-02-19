@@ -18,7 +18,7 @@ const Education = () => {
   return (
     <div className="flex flex-col mb-8 lg:mb-16">
       {/* page header */}
-      <div className="h-[40vh] md:h-[90vh] lg:h-[40vh] xl:h-screen bg-education bg-no-repeat bg-bottom bg-cover flex items-center justify-center">
+      <div className="h-[40vh] md:h-[90vh] lg:h-[40vh] xl:h-screen bg-education bg-no-repeat bg-bottom bg-cover flex items-center justify-center pt-16">
         <h1 className="heroTitle text-center">Самообразование</h1>
       </div>
 

@@ -25,10 +25,10 @@ const Footer = () => {
   const { logo, description, footerLinks } = footerData;
 
   return (
-    <div className="text-white bg-secondary dark:bg-primary section">
+    <div className="text-dark dark:text-light bg-primary/70 dark:bg-primary section">
       <div className="wrapper">
         {/* footer top */}
-        <div className="border-b-[0.1px] border-light/30 py-8 flex flex-col md:flex-row md:gap-x-10 xl:gap-x-16 lg:justify-between">
+        <div className="border-b-[0.1px] border-dark/30 dark:border-light/30 py-8 flex flex-col md:flex-row md:gap-x-10 xl:gap-x-16 lg:justify-between">
           {/* logo & description */}
           <div className="md:flex-[30%] flex flex-col gap-y-4">
             {/* logo */}
@@ -37,7 +37,9 @@ const Footer = () => {
             </div>
 
             {/* description */}
-            <p className="text-xs lg:text-sm text-light/60">{description}</p>
+            <p className="text-xs lg:text-sm text-dark/70 dark:text-light/70">
+              {description}
+            </p>
           </div>
 
           {/* mobile accordion: mobile - show | desctop - hidden */}
@@ -80,7 +82,12 @@ const Footer = () => {
 
                             return (
                               <div key={index}>
-                                <Link to={`${path}`} className='text-light/60'>{link}</Link>
+                                <Link
+                                  to={`${path}`}
+                                  className="text-dark/70 dark:text-light/70"
+                                >
+                                  {link}
+                                </Link>
                               </div>
                             );
                           })}
@@ -118,7 +125,7 @@ const Footer = () => {
                       return (
                         <li
                           key={index}
-                          className="text-[10px] lg:text-xs text-light/60 footerLink"
+                          className="text-[10px] lg:text-xs text-dark/70 dark:text-light/70 footerLink"
                         >
                           <Link to={`${path}`}>{link}</Link>
                         </li>
@@ -132,7 +139,7 @@ const Footer = () => {
         </div>
 
         {/* footer bottom */}
-        <div className="flex justify-between py-4 text-[10px] lg:text-xs text-light/60">
+        <div className="flex justify-between py-4 text-[10px] lg:text-xs text-dark/70 dark:text-light/70">
           <div>
             &copy; {year} {logo}
           </div>

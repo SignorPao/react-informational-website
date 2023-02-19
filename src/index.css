@@ -48,7 +48,7 @@
     @apply transition-all duration-300;
   }
   .footerLink {
-    @apply hover:underline hover:underline-offset-4 hover:text-light animation w-fit;
+    @apply hover:underline hover:underline-offset-4 hover:text-dark dark:hover:text-light animation w-fit;
   }
 }
 

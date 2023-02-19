@@ -6,9 +6,6 @@ import { Autoplay, EffectFade } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-// import data
-// import { headerData } from "../data/data";
-
 const HeaderCarousel = () => {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
@@ -25,7 +22,7 @@ const HeaderCarousel = () => {
       effect={"fade"}
       loop={"true"}
       autoplay={{
-        delay: 6000,
+        delay: 10000,
         // disableOnInteraction: true,
         // pauseOnMouseEnter: true,
       }}
@@ -33,19 +30,19 @@ const HeaderCarousel = () => {
       className="w-full h-full"
     >
       <SwiperSlide className="bg-hero1 bg-cover bg-bottom bg-no-repeat w-full h-full">
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center pt-16">
           <h1 className="heroTitle">Интерьер</h1>
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="bg-hero2 bg-cover bg-bottom bg-no-repeat w-full h-full">
-        <div className="w-full h-full flex items-center justify-center">
+      <SwiperSlide className="bg-hero2 bg-cover bg-center bg-no-repeat w-full h-full">
+        <div className="w-full h-full flex items-center justify-center pt-16">
           <h1 className="heroTitle">Сад и огород</h1>
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="bg-hero3 bg-cover bg-bottom bg-no-repeat w-full h-full">
-        <div className="w-full h-full flex items-center justify-center">
+      <SwiperSlide className="bg-hero3 bg-cover bg-center bg-no-repeat w-full h-full">
+        <div className="w-full h-full flex items-center justify-center pt-16">
           <h1 className="heroTitle">Стройматериалы</h1>
         </div>
       </SwiperSlide>

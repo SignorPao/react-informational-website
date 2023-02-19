@@ -74,7 +74,7 @@ const Nav = () => {
     <nav
       className={`${
         show ? "top-0 left-0" : "-top-16"
-      } fixed h-16 w-full px-8 transition-all duration-500 z-50 select-none bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none`}
+      } fixed h-16 w-full px-8 transition-all duration-150 z-50 select-none bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none`}
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
@@ -97,7 +97,7 @@ const Nav = () => {
                     className={({ isActive }) =>
                       isActive
                         ? "text-accent h-full flex items-center border-b-[4px] border-b-accent"
-                        : "text-secondary hover:text-accent dark:hover:text-accent transition-all duration-300 h-full flex items-center border-b-[4px] border-transparent"
+                        : "text-dark/60 dark:text-light/60 hover:text-accent dark:hover:text-accent animation h-full flex items-center border-b-[4px] border-transparent"
                     }
                   >
                     {link}
