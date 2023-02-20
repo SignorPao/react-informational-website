@@ -21,7 +21,7 @@
     @apply overflow-hidden;
   }
   .heroTitle {
-    @apply text-3xl lg:text-6xl xl:text-9xl text-accent font-semibold;
+    @apply text-3xl lg:text-6xl xl:text-9xl text-secondary font-semibold;
   }
   .pretitle {
     @apply uppercase font-semibold text-secondary text-[9px] lg:text-xs;
@@ -43,6 +43,9 @@
   }
   .sectionTitle {
     @apply text-dark/80 text-sm lg:text-2xl xl:text-4xl hover:underline hover:underline-offset-8 decoration-[1.2px] w-max self-center;
+  }
+  .tag {
+    @apply text-secondary bg-secondary/30 dark:bg-secondary/10 text-[10px] xl:text-xs px-2 py-1 rounded-sm;
   }
   .animation {
     @apply transition-all duration-300;
@@ -117,7 +120,7 @@ html.dark ::-webkit-scrollbar-track {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #00E6F6;
+  color: #219be4;
 }
 
 .autoplay-progress svg {
@@ -129,9 +132,13 @@ html.dark ::-webkit-scrollbar-track {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #00E6F6;
+  stroke: #219be4;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+/* .textShadow {
+ text-shadow: rgb(0, 51, 161) 1px 0px 0px, rgb(0, 51, 161) 0.540302px 0.841471px 0px, rgb(0, 51, 161) -0.416147px 0.909297px 0px, rgb(0, 51, 161) -0.989992px 0.14112px 0px, rgb(0, 51, 161) -0.653644px -0.756802px 0px, rgb(0, 51, 161) 0.283662px -0.958924px 0px, rgb(0, 51, 161) 0.96017px -0.279415px 0px;
+} */

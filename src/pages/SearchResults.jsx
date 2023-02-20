@@ -63,7 +63,7 @@ const SearchResults = () => {
       <div className="pt-28 lg:pt-32">
         <div className="text-lg lg:text-2xl font-bold">
           Результаты поиска для:{" "}
-          <span className="text-accent">{searchContext.query}</span>
+          <span className="text-secondary">{searchContext.query}</span>
         </div>
       </div>
 
@@ -102,7 +102,7 @@ const SearchResults = () => {
                       return (
                         <div
                           key={index}
-                          className="text-primary/80 dark:text-primary bg-secondary/30 dark:bg-secondary/20 text-[10px] xl:text-xs px-2 py-1 rounded-sm"
+                          className="tag"
                         >
                           {item.tag}
                         </div>
@@ -123,7 +123,7 @@ const SearchResults = () => {
           </div>
 
           {/* input */}
-          <div className="flex border-[1px] border-accent p-2 w-full md:w-[50vw]">
+          <div className="flex border-[1px] border-secondary p-2 w-full md:w-[50vw]">
             <input
               type="text"
               autoComplete="off"

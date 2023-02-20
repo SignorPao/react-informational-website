@@ -67,7 +67,7 @@ const Interior = () => {
                         return (
                           <div
                             key={index}
-                            className="text-primary/80 dark:text-primary bg-secondary/30 dark:bg-secondary/20 text-[10px] xl:text-xs px-2 py-1 rounded-sm"
+                            className="tag"
                           >
                             {item.tag}
                           </div>

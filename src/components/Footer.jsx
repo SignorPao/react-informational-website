@@ -25,14 +25,14 @@ const Footer = () => {
   const { logo, description, footerLinks } = footerData;
 
   return (
-    <div className="text-dark dark:text-light bg-primary/70 dark:bg-primary section">
+    <div className="text-dark dark:text-light bg-secondary dark:bg-primary section">
       <div className="wrapper">
         {/* footer top */}
         <div className="border-b-[0.1px] border-dark/30 dark:border-light/30 py-8 flex flex-col md:flex-row md:gap-x-10 xl:gap-x-16 lg:justify-between">
           {/* logo & description */}
           <div className="md:flex-[30%] flex flex-col gap-y-4">
             {/* logo */}
-            <div className="text-accent font-primary text-lg font-bold uppercase">
+            <div className="text-dark dark:text-white font-primary text-lg font-bold uppercase">
               <HashLink to={"#up"}>{logo}</HashLink>
             </div>
 
@@ -149,7 +149,7 @@ const Footer = () => {
               href="https://github.com/SignorPao"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-accent transition duration-300"
+              className="hover:text-white transition duration-300"
             >
               @signorPao
             </a>

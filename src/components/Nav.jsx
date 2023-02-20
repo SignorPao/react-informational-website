@@ -74,11 +74,11 @@ const Nav = () => {
     <nav
       className={`${
         show ? "top-0 left-0" : "-top-16"
-      } fixed h-16 w-full px-8 transition-all duration-150 z-50 select-none bg-light dark:bg-dark dark:text-light shadow-md dark:shadow-none`}
+      } fixed h-16 w-full px-8 transition-all duration-150 z-50 select-none bg-secondary dark:bg-primary dark:text-light shadow-md dark:shadow-none`}
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="order-2 z-50 md:z-auto text-accent md:order-none font-primary text-lg font-bold">
+        <div className="order-2 z-50 md:z-auto text-dark dark:text-white md:order-none font-primary text-lg font-bold">
           <HashLink to={"#up"}>ЛОГО</HashLink>
         </div>
 
@@ -96,8 +96,8 @@ const Nav = () => {
                     to={`${path}`}
                     className={({ isActive }) =>
                       isActive
-                        ? "text-accent h-full flex items-center border-b-[4px] border-b-accent"
-                        : "text-dark/60 dark:text-light/60 hover:text-accent dark:hover:text-accent animation h-full flex items-center border-b-[4px] border-transparent"
+                        ? "text-white h-full flex items-center border-b-[4px] border-b-white"
+                        : "text-dark/60 dark:text-light/60 hover:text-white dark:hover:text-white animation h-full flex items-center border-b-[4px] border-transparent"
                     }
                   >
                     {link}

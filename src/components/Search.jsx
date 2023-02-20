@@ -89,7 +89,7 @@ const Search = ({ click }) => {
 
                 {/* text */}
                 <div className="flex-[70%] flex flex-col gap-y-2">
-                  <div className="text-xs xl:text-sm group-hover:text-accent animation">
+                  <div className="text-xs xl:text-sm group-hover:text-secondary animation">
                     {article.title}
                   </div>
                   <div className="hidden lg:flex gap-1 flex-wrap">
@@ -97,7 +97,7 @@ const Search = ({ click }) => {
                       return (
                         <div
                           key={index}
-                          className="text-primary/80 dark:text-primary bg-secondary/30 dark:bg-secondary/20 text-[9px] xl:text-xs px-2 py-1 rounded-sm"
+                          className="tag"
                         >
                           {item.tag}
                         </div>
@@ -116,7 +116,7 @@ const Search = ({ click }) => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center text-light">
       {/* search input */}
-      <div className="w-[80vw] xl:w-[55vw] flex justify-between border-b-[0.1px] border-accent mb-6 lg:mb-10 pb-2 lg:pb-4">
+      <div className="w-[80vw] xl:w-[55vw] flex justify-between border-b-[0.1px] border-secondary mb-6 lg:mb-10 pb-2 lg:pb-4">
         <input
           type="text"
           autoComplete="off"
@@ -137,7 +137,7 @@ const Search = ({ click }) => {
             click();
             searchQueryHandler();
           }}
-          className="bg-accent w-8 lg:w-12 h-8 lg:h-12 flex items-center justify-center rounded-full"
+          className="bg-secondary w-8 lg:w-12 h-8 lg:h-12 flex items-center justify-center rounded-full"
         >
           <FiSearch className="text-base lg:text-xl" />
         </Link>
@@ -154,7 +154,7 @@ const Search = ({ click }) => {
             click();
             searchQueryHandler();
           }}
-          className="mt-4 lg:mt-8 text-xs lg:text-base hover:text-accent animation"
+          className="mt-4 lg:mt-8 text-xs lg:text-base hover:text-secondary animation"
         >
           Показать все
         </Link>
