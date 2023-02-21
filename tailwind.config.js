@@ -39,8 +39,6 @@ module.exports = {
         // secondary: "#5689C0",
         secondary: "#219BE4",
 
-        // secondary: "#00629b",
-        
         // secondaryLight: "#E0FBFC",
         // secondaryLight: "#98C1D9",
         // secondaryLight: "#A5C9CA",
@@ -54,8 +52,6 @@ module.exports = {
         // accent: "#2A86FF",
         // accent: "#30A0E0",
         // accent: "#98DAD9",
-        
-        // accent: "#00a6d6",
 
         // dark: "#252525",
         dark: "#171717",
@@ -67,16 +63,16 @@ module.exports = {
         // dark: "#14202E",
         // dark: "#132620",
         // dark: "#082A3A",
-        
+
         light: "#FFF",
         // light: "#EEE",
         // light: "#EDEDED",
         // light: "#DDD",
         // light: "#E9EEF2",
-        
+
         lightGrey: "#F2F4F5",
         // lightGrey: "#EAEBED",
-        
+
         grey: "#303030",
         // grey: "#2B2B2B",
         // grey: "#787A91",
