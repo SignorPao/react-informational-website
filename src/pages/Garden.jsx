@@ -12,7 +12,7 @@ import { HashLink } from "react-router-hash-link";
 const Garden = () => {
   // title of the document
   useEffect(() => {
-    document.title = "Сад и огород || Mark Powell";
+    document.title = "Сад и огород";
   }, []);
 
   return (

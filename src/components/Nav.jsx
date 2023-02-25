@@ -74,18 +74,23 @@ const Nav = () => {
     <nav
       className={`${
         show ? "top-0 left-0" : "-top-16"
-      } fixed h-16 w-full px-8 transition-all duration-150 z-50 select-none bg-secondary dark:bg-primary dark:text-light shadow-md dark:shadow-none`}
+      } fixed h-16 w-full px-8 transition-all duration-300 z-50 select-none bg-secondary dark:bg-primary dark:text-light shadow-md dark:shadow-none`}
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="order-2 z-50 md:z-auto text-dark dark:text-white md:order-none font-primary text-lg font-bold">
-          <HashLink to={"#up"}>ЛОГО</HashLink>
+        <div className="order-2 z-50 md:z-auto text-dark dark:text-light md:order-none font-primary text-xs lg:text-lg font-bold text-center lg:text-left">
+          <HashLink to={"#up"} className="flex flex-col">
+            <span className="text-accent">Хочу всё Знать</span>
+            <span className="text-[8px] leading-none text-center lg:text-left lg:text-xs italic font-normal">
+              Информационный блог
+            </span>
+          </HashLink>
         </div>
 
         {/* menu & burger & navMobile */}
         <div className="order-3 md:order-none h-full flex gap-x-6 items-center">
           {/* nav menu: mobile - hidden | desktop - show */}
-          <ul className="hidden h-full md:flex gap-x-2 lg:gap-x-4 xl:font-medium text-xs xl:text-lg">
+          <ul className="hidden h-full md:flex gap-x-2 lg:gap-x-4 xl:font-medium text-[10px] xl:text-lg">
             {navData.map((item, index) => {
               // destructure item
               const { link, path } = item;
@@ -96,8 +101,8 @@ const Nav = () => {
                     to={`${path}`}
                     className={({ isActive }) =>
                       isActive
-                        ? "text-white h-full flex items-center border-b-[4px] border-b-white"
-                        : "text-dark/60 dark:text-light/60 hover:text-white dark:hover:text-white animation h-full flex items-center border-b-[4px] border-transparent"
+                        ? "text-light h-full flex items-center border-b-[4px] border-b-light"
+                        : "text-dark/70 dark:text-light/70 hover:text-light dark:hover:text-light animation h-full flex items-center border-b-[4px] border-transparent"
                     }
                   >
                     {link}
@@ -126,7 +131,7 @@ const Nav = () => {
         </div>
 
         {/* dark/light & search */}
-        <div className="flex items-center justify-center gap-x-4 xl:gap-x-8">
+        <div className="flex items-center justify-center gap-x-2 xl:gap-x-8">
           {/* dark/light mode */}
           <div className="order-1 md:order-none z-50 md:z-auto">
             <Switcher />

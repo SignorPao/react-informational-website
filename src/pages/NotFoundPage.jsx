@@ -10,7 +10,7 @@ import { VscSearchStop } from "react-icons/vsc";
 const NotFoundPage = () => {
   // title of the document
   useEffect(() => {
-    document.title = "Страница не найдена || Mark Powell";
+    document.title = "Страница не найдена";
   }, []);
 
   return (

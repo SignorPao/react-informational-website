@@ -13,7 +13,8 @@ import MainContact from "../components/MainContact";
 const Main = () => {
   // title of the document
   useEffect(() => {
-    document.title = "Главная || Mark Powell";
+    document.title =
+      "Хочу всё Знать - строоительство, ремонт, хобби, дача, огород и др.";
   }, []);
 
   return (

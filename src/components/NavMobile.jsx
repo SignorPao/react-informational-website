@@ -28,7 +28,7 @@ const NavMobile = ({ click }) => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center gap-y-10 bg-primary text-white wrapper">
+    <div className="w-screen h-full flex flex-col items-center justify-center gap-y-10 bg-secondary dark:bg-primary text-white p-4 overflow-y-scroll">
       {/* mobile search bar */}
       <div className="flex items-center justify-between bg-light text-dark w-full">
         <input

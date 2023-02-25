@@ -18,7 +18,7 @@ const GardenArticle = () => {
 
   // title of the document
   useEffect(() => {
-    document.title = `${title} || Mark Powell`;
+    document.title = `${title}`;
   }, []);
 
   return (

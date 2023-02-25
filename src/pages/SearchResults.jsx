@@ -20,7 +20,7 @@ import { educationArticles } from "../data/dataEducation";
 const SearchResults = () => {
   // title of the document
   useEffect(() => {
-    document.title = "Результаты поиска || Mark Powell";
+    document.title = "Результаты поиска";
   }, []);
 
   const [searchField, setSearchField] = useState("");

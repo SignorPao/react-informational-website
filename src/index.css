@@ -53,6 +53,9 @@
   .footerLink {
     @apply hover:underline hover:underline-offset-4 hover:text-dark dark:hover:text-light animation w-fit;
   }
+  .switcherIcon {
+    @apply text-base;
+  }
 }
 
 html {
