@@ -29,21 +29,33 @@ const HeaderCarousel = () => {
       onAutoplayTimeLeft={onAutoplayTimeLeft}
       className="w-full h-full"
     >
-      <SwiperSlide className="bg-hero1 bg-cover bg-bottom bg-no-repeat w-full h-full">
-        <div className="w-full h-full flex items-center justify-center pt-16">
+      <SwiperSlide className="bg-hero1 bg-cover bg-bottom bg-no-repeat w-full h-full bg-dark/10 bg-blend-multiply">
+        <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Интерьер</h1>
+          <p className="heroSubTitle">
+            Советы для создания интерьера вашей мечты
+          </p>
+          <button className="btn">Читать</button>
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="bg-hero2 bg-cover bg-center bg-no-repeat w-full h-full">
-        <div className="w-full h-full flex items-center justify-center pt-16">
+      <SwiperSlide className="bg-hero2 bg-cover bg-center bg-no-repeat w-full h-full bg-dark/10 bg-blend-multiply">
+        <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Сад и огород</h1>
+          <p className="heroSubTitle">
+            Статьи для содоводов и огородников
+          </p>
+          <button className="btn bg-secondary dark:bg-primary dark:text-light">Читать</button>
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="bg-hero3 bg-cover bg-center bg-no-repeat w-full h-full">
-        <div className="w-full h-full flex items-center justify-center pt-16">
+      <SwiperSlide className="bg-hero3 bg-cover bg-center bg-no-repeat w-full h-full bg-dark/10 bg-blend-multiply">
+        <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Стройматериалы</h1>
+          <p className="heroSubTitle xl:w-1/2">
+            Всё о лучших строительных материалах и технологиях
+          </p>
+          <button className="btn bg-secondary dark:bg-primary dark:text-light">Читать</button>
         </div>
       </SwiperSlide>
 
