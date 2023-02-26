@@ -191,9 +191,10 @@ export const mainEducationData = {
 
 // footer data
 export const footerData = {
-  logo: "Лого",
-  description:
-    "Lorem ipsum dolor sit amet consectetur. Nec enim tellus congue morbi sed proin a. Et sit nunc sit nec quis gravida",
+  logo: "Хочу всё Знать",
+  description: "Познавательные статьи на разные случаи жизни. Автор: ",
+  author: "Павел Белоусов",
+  site: "https://pavelbelousov.vercel.app/",
   footerLinks: [
     {
       mainLink: "Интерьер",

@@ -78,7 +78,7 @@ const Nav = () => {
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="order-2 z-50 md:z-auto text-dark dark:text-light md:order-none font-primary text-xs lg:text-lg font-bold text-center lg:text-left">
+        <div className="order-2 z-50 md:z-auto text-dark dark:text-light md:order-none font-primary text-sm lg:text-lg font-bold text-center lg:text-left">
           <HashLink to={"#up"} className="flex flex-col gap-y-[1px]">
             <span className="text-accent">Хочу всё Знать</span>
             <span className="text-[8px] leading-none text-center lg:text-left lg:text-xs italic font-normal">

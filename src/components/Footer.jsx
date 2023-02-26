@@ -22,7 +22,7 @@ const year = new Date().getFullYear();
 
 const Footer = () => {
   // destructure footer datra
-  const { logo, description, footerLinks } = footerData;
+  const { logo, description, author, site, footerLinks } = footerData;
 
   return (
     <div className="text-dark dark:text-light bg-secondary dark:bg-primary section">
@@ -32,13 +32,29 @@ const Footer = () => {
           {/* logo & description */}
           <div className="md:flex-[30%] flex flex-col gap-y-4">
             {/* logo */}
-            <div className="text-dark dark:text-white font-primary text-lg font-bold uppercase">
-              <HashLink to={"#up"}>{logo}</HashLink>
+            <div className="text-dark dark:text-white font-primary text-lg font-bold">
+              <HashLink
+                to={"#up"}
+                className="flex flex-col items-start gap-y-[1px]"
+              >
+                <span className="text-accent">{logo}</span>
+                <span className="text-[8px] leading-none text-center lg:text-left lg:text-xs italic font-normal">
+                  Информационный блог
+                </span>
+              </HashLink>
             </div>
 
             {/* description */}
             <p className="text-xs lg:text-sm text-dark/70 dark:text-light/70">
-              {description}
+              {description}{" "}
+              <a
+                href={site}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-accent animation"
+              >
+                {author}
+              </a>
             </p>
           </div>
 
@@ -149,7 +165,7 @@ const Footer = () => {
               href="https://github.com/SignorPao"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition duration-300"
+              className="hover:text-accent animation"
             >
               @signorPao
             </a>
