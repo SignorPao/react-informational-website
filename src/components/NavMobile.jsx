@@ -28,14 +28,14 @@ const NavMobile = ({ click }) => {
   };
 
   return (
-    <div className="w-screen h-full flex flex-col items-center justify-center gap-y-10 bg-secondary dark:bg-primary text-white p-4 overflow-y-scroll">
+    <div className="w-screen h-full flex flex-col items-center justify-center gap-y-10 bg-secondary dark:bg-primary text-light p-4 overflow-y-scroll">
       {/* mobile search bar */}
       <div className="flex items-center justify-between bg-light text-dark w-full">
         <input
           type="text"
           autoComplete="off"
           placeholder="Поиск..."
-          className="py-2 px-3 bg-transparent outline-none focus:ring-0 w-[80%] text-2xl"
+          className="py-2 px-3 bg-transparent outline-none focus:ring-0 w-[80%] text-lg"
           onChange={handleChange}
           onKeyDown={(event) => {
             if (event.key === "Enter") {
@@ -53,12 +53,12 @@ const NavMobile = ({ click }) => {
           }}
           className="text-dark flex items-center justify-center px-3"
         >
-          <FiSearch className="text-2xl" />
+          <FiSearch className="text-xl" />
         </Link>
       </div>
 
       {/* mobile menu */}
-      <ul className="flex flex-col justify-center items-start gap-y-10 text-2xl">
+      <ul className="flex flex-col justify-center items-start gap-y-5 text-lg">
         {navData.map((item, index) => {
           // destructure item
           const { link, path } = item;

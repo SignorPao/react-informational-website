@@ -192,7 +192,7 @@ export const mainEducationData = {
 // footer data
 export const footerData = {
   logo: "Хочу всё Знать",
-  description: "Познавательные статьи на разные случаи жизни. Автор: ",
+  description: "Познавательные статьи на разные случаи жизни.",
   author: "Павел Белоусов",
   site: "https://pavelbelousov.vercel.app/",
   footerLinks: [

@@ -45,16 +45,19 @@ const Footer = () => {
             </div>
 
             {/* description */}
-            <p className="text-xs lg:text-sm text-dark/70 dark:text-light/70">
-              {description}{" "}
-              <a
-                href={site}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium hover:text-accent animation"
-              >
-                {author}
-              </a>
+            <p className="text-sm text-dark/70 dark:text-light/70 flex flex-col">
+              {description}
+              <span>
+                Автор:{" "}
+                <a
+                  href={site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-accent animation"
+                >
+                  {author}
+                </a>
+              </span>
             </p>
           </div>
 

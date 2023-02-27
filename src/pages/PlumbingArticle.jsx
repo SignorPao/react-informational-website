@@ -32,7 +32,7 @@ const PlumbingArticle = () => {
       <h2 className="px-4 text-center title">{title}</h2>
 
       {/* tags */}
-      <ul className="flex gap-x-2 px-4 text-center">
+      <ul className="flex gap-2 px-4 text-center flex-wrap">
         {tags.map((item, index) => {
           return (
             <li
@@ -62,7 +62,7 @@ const PlumbingArticle = () => {
                       </h2>
                     );
                   case "paragraph":
-                    return <p>{content}</p>;
+                    return <p className="articleText">{content}</p>;
                   case "list":
                     return (
                       <ul className="flex flex-col gap-y-1 -mt-2 xl:-mt-3">

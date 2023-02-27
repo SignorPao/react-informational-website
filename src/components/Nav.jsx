@@ -74,11 +74,11 @@ const Nav = () => {
     <nav
       className={`${
         show ? "top-0 left-0" : "-top-16"
-      } fixed h-16 w-full px-8 transition-all duration-300 z-50 select-none bg-secondary dark:bg-primary dark:text-light shadow-md dark:shadow-none`}
+      } fixed h-16 w-full px-2 lg:px-8 transition-all duration-300 z-50 select-none bg-secondary dark:bg-primary dark:text-light shadow-md dark:shadow-none`}
     >
       <div className="w-full h-full flex items-center justify-between">
         {/* logo */}
-        <div className="order-2 z-50 md:z-auto text-dark dark:text-light md:order-none font-primary text-sm lg:text-lg font-bold text-center lg:text-left">
+        <div className="order-2 z-50 md:z-auto text-dark dark:text-light md:order-none font-primary text-lg font-bold text-center lg:text-left">
           <HashLink to={"#up"} className="flex flex-col gap-y-[1px]">
             <span className="text-accent">Хочу всё Знать</span>
             <span className="text-[8px] leading-none text-center lg:text-left lg:text-xs italic font-normal">
