@@ -48,7 +48,10 @@
     @apply text-dark/70 dark:text-light/70 text-sm lg:text-base;
   }
   .sectionTitle {
-    @apply text-dark/80 text-sm lg:text-2xl xl:text-4xl hover:underline hover:underline-offset-8 decoration-[1.2px] w-max self-center;
+    @apply text-dark/80 text-lg lg:text-2xl xl:text-4xl hover:underline hover:underline-offset-8 decoration-[1.2px] w-max self-center;
+  }
+  .pageQuote {
+    @apply text-dark/80 text-lg lg:text-2xl xl:text-4xl dark:text-light;
   }
   .tag {
     @apply text-secondary bg-secondary/30 dark:bg-secondary/10 text-[10px] xl:text-xs px-2 py-1 rounded-sm;

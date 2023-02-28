@@ -22,11 +22,7 @@ const MainInterior = () => {
           className="bg-white dark:bg-grey group order-2 md:order-none md:flex-[65%]"
         >
           {/* image */}
-          <img
-            src={img}
-            alt="интерьер"
-            className="w-full object-cover"
-          />
+          <img src={img} alt="интерьер" className="w-full object-cover" />
 
           {/* text */}
           <div className="px-2 py-4 flex flex-col gap-y-2">

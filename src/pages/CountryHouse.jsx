@@ -26,7 +26,7 @@ const CountryHouse = () => {
       <div className="wrapper">
         {/* article top */}
         <div className="flex items-center justify-center section md:pb-0 lg:pb-8">
-          <h2 className="text-dark/80 text-sm lg:text-2xl xl:text-4xl dark:text-light">
+          <h2 className="pageQuote">
             Вдали от городской суеты
           </h2>
         </div>

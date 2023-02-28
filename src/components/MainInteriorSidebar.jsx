@@ -30,7 +30,7 @@ const MainInteriorSidebar = () => {
                     className="max-w-full object-cover"
                   />
                 </div>
-                
+
                 <h3 className="sidebarTitle articleHover group-hover:underline-offset-4 decoration-1">
                   {title}
                 </h3>
