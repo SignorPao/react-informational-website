@@ -17,7 +17,7 @@ const MainEducation = () => {
         className="bg-secondary dark:bg-primary md:h-[300px] lg:h-[400px] flex flex-col md:flex-row group"
       >
         {/* image */}
-        <div className="md:flex-[60%] h-full">
+        <div className="md:flex-[40%] lg:flex-[60%] h-full">
           <img
             src={img}
             alt="самообразование"
@@ -26,7 +26,7 @@ const MainEducation = () => {
         </div>
 
         {/* text */}
-        <div className="md:flex-[40%] flex flex-col items-start justify-start gap-y-4 p-6">
+        <div className="md:flex-[60%] lg:flex-[40%] flex flex-col items-start justify-start gap-y-4 p-6 overflow-hidden">
           <h3 className="pretitle text-primary dark:text-secondary">
             {pretitle}
           </h3>

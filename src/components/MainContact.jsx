@@ -1,5 +1,8 @@
 import React from "react";
 
+// import component
+import Button from "./Button";
+
 const MainContact = () => {
   return (
     <section className="bg-secondary/60 dark:bg-secondary">
@@ -18,6 +21,7 @@ const MainContact = () => {
           <button className="btn">
             Подписаться
           </button>
+          {/* <Button link={"#!"} text={"Подписаться"} bg={'grey'}/> */}
         </form>
       </div>
     </section>

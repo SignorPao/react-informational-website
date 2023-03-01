@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 
+// import component
+import Button from "./Button";
+
 // react-router
 import { Link } from "react-router-dom";
 
@@ -35,12 +38,15 @@ const HeaderCarousel = () => {
       <SwiperSlide className="bg-hero1 bg-cover bg-bottom bg-no-repeat w-full h-full bg-dark/10 bg-blend-multiply">
         <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Интерьер</h1>
+
           <p className="heroSubTitle">
             Советы для создания интерьера вашей мечты
           </p>
-          <Link to={"interior"} className="btn">
+
+          {/* <Link to={"interior"} className="btn">
             Читать
-          </Link>
+          </Link> */}
+          <Button link={"interior"} text={"Читать"} bg={'secondary'} />
         </div>
       </SwiperSlide>
 
@@ -48,12 +54,13 @@ const HeaderCarousel = () => {
         <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Сад и огород</h1>
           <p className="heroSubTitle">Статьи для содоводов и огородников</p>
-          <Link
+          {/* <Link
             to={"garden"}
             className="btn bg-secondary dark:bg-primary dark:text-light"
           >
             Читать
-          </Link>
+          </Link> */}
+          <Button link={"garden"} text={"Читать"} bg={'secondary'} />
         </div>
       </SwiperSlide>
 
@@ -63,12 +70,13 @@ const HeaderCarousel = () => {
           <p className="heroSubTitle xl:w-1/2">
             Всё о лучших строительных материалах и технологиях
           </p>
-          <Link
+          {/* <Link
             to={"materials"}
             className="btn bg-secondary dark:bg-primary dark:text-light"
           >
             Читать
-          </Link>
+          </Link> */}
+          <Button link={"materials"} text={"Читать"} bg={'secondary'} />
         </div>
       </SwiperSlide>
 
