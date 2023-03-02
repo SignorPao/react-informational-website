@@ -29,8 +29,6 @@ const HeaderCarousel = () => {
       loop={"true"}
       autoplay={{
         delay: 10000,
-        // disableOnInteraction: true,
-        // pauseOnMouseEnter: true,
       }}
       onAutoplayTimeLeft={onAutoplayTimeLeft}
       className="w-full h-full"
@@ -46,7 +44,7 @@ const HeaderCarousel = () => {
           {/* <Link to={"interior"} className="btn">
             Читать
           </Link> */}
-          <Button link={"interior"} text={"Читать"} bg={'secondary'} />
+          <Button link={"interior"} text={"Читать"} bg={"secondary"} />
         </div>
       </SwiperSlide>
 
@@ -60,7 +58,7 @@ const HeaderCarousel = () => {
           >
             Читать
           </Link> */}
-          <Button link={"garden"} text={"Читать"} bg={'secondary'} />
+          <Button link={"garden"} text={"Читать"} bg={"secondary"} />
         </div>
       </SwiperSlide>
 
@@ -76,7 +74,7 @@ const HeaderCarousel = () => {
           >
             Читать
           </Link> */}
-          <Button link={"materials"} text={"Читать"} bg={'secondary'} />
+          <Button link={"materials"} text={"Читать"} bg={"secondary"} />
         </div>
       </SwiperSlide>
 
