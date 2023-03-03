@@ -25,7 +25,7 @@ const Footer = () => {
   const { logo, description, author, site, footerLinks } = footerData;
 
   return (
-    <div className="text-dark dark:text-light bg-secondary dark:bg-primary section">
+    <footer className="text-dark dark:text-light bg-secondary dark:bg-primary section">
       <div className="wrapper">
         {/* footer top */}
         <div className="border-b-[0.1px] border-dark/30 dark:border-light/30 py-8 flex flex-col md:flex-row md:gap-x-10 xl:gap-x-16 lg:justify-between">
@@ -175,7 +175,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -3,9 +3,6 @@ import React, { useRef } from "react";
 // import component
 import Button from "./Button";
 
-// react-router
-import { Link } from "react-router-dom";
-
 // import swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper";
@@ -41,9 +38,6 @@ const HeaderCarousel = () => {
             Советы для создания интерьера вашей мечты
           </p>
 
-          {/* <Link to={"interior"} className="btn">
-            Читать
-          </Link> */}
           <Button link={"interior"} text={"Читать"} bg={"secondary"} />
         </div>
       </SwiperSlide>
@@ -51,13 +45,9 @@ const HeaderCarousel = () => {
       <SwiperSlide className="bg-hero2 bg-cover bg-center bg-no-repeat w-full h-full bg-dark/10 bg-blend-multiply">
         <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Сад и огород</h1>
+
           <p className="heroSubTitle">Статьи для содоводов и огородников</p>
-          {/* <Link
-            to={"garden"}
-            className="btn bg-secondary dark:bg-primary dark:text-light"
-          >
-            Читать
-          </Link> */}
+
           <Button link={"garden"} text={"Читать"} bg={"secondary"} />
         </div>
       </SwiperSlide>
@@ -65,15 +55,11 @@ const HeaderCarousel = () => {
       <SwiperSlide className="bg-hero3 bg-cover bg-center bg-no-repeat w-full h-full bg-dark/10 bg-blend-multiply">
         <div className="w-full h-full flex flex-col gap-y-1 lg:gap-y-4 items-center justify-center pt-16">
           <h1 className="heroTitle">Стройматериалы</h1>
+          
           <p className="heroSubTitle xl:w-1/2">
             Всё о лучших строительных материалах и технологиях
           </p>
-          {/* <Link
-            to={"materials"}
-            className="btn bg-secondary dark:bg-primary dark:text-light"
-          >
-            Читать
-          </Link> */}
+
           <Button link={"materials"} text={"Читать"} bg={"secondary"} />
         </div>
       </SwiperSlide>

@@ -25,11 +25,9 @@ const MainCountryHouse = () => {
             {pretitle}
           </h3>
 
-          <h2 className="title articleHover">
-            {title}
-          </h2>
+          <h2 className="title articleHover">{title}</h2>
 
-          <p className="articleText">{text}</p>
+          <p className="articleText text-dark/70 dark:text-light/70">{text}</p>
         </Link>
       </div>
     </section>

@@ -7,6 +7,9 @@ import Footer from "./Footer";
 // react-router
 import { Outlet, useLocation } from "react-router-dom";
 
+// scroll to top component
+import { ScrollToTop } from "./ScrollToTop";
+
 // page scroll to top
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -20,6 +23,7 @@ const Root = () => {
   return (
     <div id="up">
       <Wrapper>
+        <ScrollToTop />
         <Nav />
         <Outlet />
         <Footer />

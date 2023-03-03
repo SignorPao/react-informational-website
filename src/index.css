@@ -45,7 +45,7 @@
     @apply decoration-[1.2px] group-hover:underline group-hover:underline-offset-8;
   }
   .articleText {
-    @apply text-dark/70 dark:text-light/70 text-sm lg:text-base;
+    @apply text-dark dark:text-light text-sm lg:text-base;
   }
   .sectionTitle {
     @apply text-dark/80 text-lg lg:text-2xl xl:text-4xl hover:underline hover:underline-offset-8 decoration-[1.2px] w-max self-center;

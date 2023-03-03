@@ -22,18 +22,19 @@ const MainMaterials = () => {
         </div>
 
         {/* main article */}
-        <Link
-          to={link}
-          className="md:flex-[65%] group"
-        >
+        <Link to={link} className="md:flex-[65%] group">
           {/* image */}
           <img src={img} alt="стройматериалы" className="w-full object-cover" />
 
           {/* text */}
           <div className="px-2 py-4 flex flex-col gap-y-2">
-            <h3 className="pretitle text-primary dark:text-secondary">{pretitle}</h3>
+            <h3 className="pretitle text-primary dark:text-secondary">
+              {pretitle}
+            </h3>
             <h2 className="title articleHover">{title}</h2>
-            <p className="articleText">{text}</p>
+            <p className="articleText text-dark/70 dark:text-light/70">
+              {text}
+            </p>
           </div>
         </Link>
       </div>

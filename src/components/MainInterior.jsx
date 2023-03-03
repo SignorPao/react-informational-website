@@ -28,7 +28,9 @@ const MainInterior = () => {
           <div className="px-2 py-4 flex flex-col gap-y-2">
             <h3 className="pretitle">{pretitle}</h3>
             <h2 className="title articleHover">{title}</h2>
-            <p className="articleText">{text}</p>
+            <p className="articleText text-dark/70 dark:text-light/70">
+              {text}
+            </p>
           </div>
         </Link>
 
