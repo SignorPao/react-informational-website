@@ -89,7 +89,7 @@ const Search = ({ click }) => {
 
                 {/* text */}
                 <div className="flex-[70%] flex flex-col gap-y-2">
-                  <div className="text-xs xl:text-sm group-hover:text-secondary animation">
+                  <div className="text-xs xl:text-sm group-hover:text-accent animation">
                     {article.title}
                   </div>
                   <div className="hidden lg:flex gap-1 flex-wrap">
@@ -154,7 +154,7 @@ const Search = ({ click }) => {
             click();
             searchQueryHandler();
           }}
-          className="mt-4 lg:mt-8 text-xs lg:text-base hover:text-secondary animation"
+          className="mt-4 lg:mt-8 text-xs lg:text-base hover:text-accent animation"
         >
           Показать все
         </Link>

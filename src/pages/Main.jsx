@@ -10,6 +10,8 @@ import MainCountryHouse from "../components/MainCountryHouse";
 import MainEducation from "../components/MainEducation";
 import MainContact from "../components/MainContact";
 
+// import { ScrollToTop } from "../components/ScrollToTop";
+
 const Main = () => {
   // title of the document
   useEffect(() => {
@@ -19,6 +21,7 @@ const Main = () => {
 
   return (
     <>
+     {/* <ScrollToTop /> */}
       <Header />
       <MainInterior />
       <MainGarden />
