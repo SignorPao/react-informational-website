@@ -70,7 +70,7 @@ const InteriorArticle = () => {
                       <ul className="flex flex-col gap-y-1 -mt-2 xl:-mt-3">
                         {content.map((item, index) => {
                           return (
-                            <li key={index} className="list-inside list-disc">
+                            <li key={index} className="list-inside list-disc articleText">
                               {item.item}
                             </li>
                           );
