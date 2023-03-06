@@ -15,11 +15,21 @@ import kleenyi2 from "../assets/otherPages/materials/kleenyi_brus_2.webp";
 import gazoblok1 from "../assets/otherPages/materials/gazoblok_1.webp";
 import gazoblok2 from "../assets/otherPages/materials/gazoblok_2.webp";
 
-import plity1 from '../assets/otherPages/materials/dvp.webp'
-import plity2 from '../assets/otherPages/materials/dsp.webp'
-import plity3 from '../assets/otherPages/materials/mdf.webp'
-import plity4 from '../assets/otherPages/materials/ldf.webp'
-import plity5 from '../assets/otherPages/materials/osb.webp'
+import plity1 from "../assets/otherPages/materials/dvp.webp";
+import plity2 from "../assets/otherPages/materials/dsp.webp";
+import plity3 from "../assets/otherPages/materials/mdf.webp";
+import plity4 from "../assets/otherPages/materials/ldf.webp";
+import plity5 from "../assets/otherPages/materials/osb.webp";
+
+import materialyBud1 from "../assets/otherPages/materials/10_materialov1.webp";
+import materialyBud2 from "../assets/otherPages/materials/10_materialov2.webp";
+import materialyBud3 from "../assets/otherPages/materials/10_materialov3.webp";
+import materialyBud4 from "../assets/otherPages/materials/10_materialov4.webp";
+import materialyBud5 from "../assets/otherPages/materials/10_materialov5.webp";
+import materialyBud6 from "../assets/otherPages/materials/10_materialov6.webp";
+import materialyBud7 from "../assets/otherPages/materials/10_materialov7.webp";
+import materialyBud8 from "../assets/otherPages/materials/10_materialov8.webp";
+import materialyBud9 from "../assets/otherPages/materials/10_materialov9.webp";
 
 // materials articles
 export const materialsArticles = [
@@ -578,4 +588,179 @@ export const materialsArticles = [
     ],
   },
   // ARTICLE 4 END
+
+  // ARTICLE 5 START
+  {
+    id: "Десять футуристических строительных технологий",
+    img: materialyBud1,
+    pretitle: "Стройматериалы",
+    title: "Десять футуристических строительных технологий",
+    tagString:
+      "строительство материалы технологии будущее бетон 3D алюминий кирпич",
+    tags: [
+      {
+        tag: "строительство",
+        tagLink: "#",
+      },
+      {
+        tag: "материалы",
+        tagLink: "#",
+      },
+      {
+        tag: "технологии",
+        tagLink: "#",
+      },
+      {
+        tag: "будущее",
+        tagLink: "#",
+      },
+      {
+        tag: "бетон",
+        tagLink: "#",
+      },
+      {
+        tag: "3D",
+        tagLink: "#",
+      },
+      {
+        tag: "алюминий",
+        tagLink: "#",
+      },
+      {
+        tag: "кирпич",
+        tagLink: "#",
+      },
+    ],
+    linkToArticle: "/materials/Десять футуристических строительных технологий",
+    text: [
+      {
+        attribute: "paragraph",
+        content:
+          "В наши дни, стремительно развивающиеся технологии затронули, буквально каждый аспект жизнедеятельности человека. Не отстают от общих тенденций и разработки в строительной области. На данный момент существует несколько основных направлений исследований в области строительных материалов и технологий будущего. Далее список из десяти инновационных строительных технологий, которые должны прийти на смену существующим, в самом ближайшем времени.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud2,
+      },
+      {
+        attribute: "title",
+        content: "1. 3D-печать зданий",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "3D «принтеры» для возведения домов, представляют собой подобие строительного крана, которые возводят стены путем нанесения слоев бетонной смеси. Данная технология позволяет возводить недорогие здания за относительно короткий срок.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud3,
+      },
+      {
+        attribute: "title",
+        content: "2. Самовосстанавливающийся бетон",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Бетон не смотря на все свои лучшие качества, имеет такой недостаток, как появление трещин. На содержание и восстановление бетонных конструкций тратятся значительные средства. Самовосстанавливающийся бетон продлевает срок службы бетона и значительно экономит средства. Секрет технологии заключен в реактивации бактерий, содержащихся в бетоне, под воздействием воды они выделяют кальцит, который «заживляет» трещину.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud4,
+      },
+      {
+        attribute: "title",
+        content: "3. Бамбуковые города",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Бамбук это возобновляемый строительный ресурс, который устойчивее бетона и прочнее стали. Бамбуковые города, построенные из инновационных модульных бамбуковых конструкций, соединенных между собой, легко масштабируемы и с последующим разрастанием, становятся только прочнее.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud5,
+      },
+      {
+        attribute: "title",
+        content: "4. Прозрачный алюминий",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Прозрачный алюминий представляет собой передовую технологию строительства. Этот материал создан с применением лазерной технологии из оксинитрида алюминия (AION). Прозрачный алюминий выглядит как обычное стекло, но при этом он — пуленепробиваемый и почти не уступает стали по прочности.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud6,
+      },
+      {
+        attribute: "title",
+        content: "5. Изоляция из аэрогеля",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Аэрогель, также известный, как «замороженный дым» производится путем удаления жидкости из геля. Ткань из аэрогеля находит все более широкое применение в строительстве благодаря невероятным изоляционным свойствам.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud7,
+      },
+      {
+        attribute: "title",
+        content: "6. «Умные» дороги",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "«Умные» дороги — это будущее автотранспортного движения. Технология позволяет генерировать энергию, используемую для подзарядки автомобилей и для освещения улиц.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud8,
+      },
+      {
+        attribute: "title",
+        content: "7. Роботизированный «рой»",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Идея исследователей Гарвардского университета, заключается в использовании специально запрограммированных на совместную деятельность роботов. Роботы запрограммированы на создание определенных конструкций и оснащены датчиками обнаружения других роботов, что позволяет им работать вместе, подобно рою термитов.",
+      },
+      {
+        attribute: "image",
+        content: materialyBud9,
+      },
+      {
+        attribute: "title",
+        content: "8. Вертикальные города",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Вертикальные города представляют собой здания-башни. В каждом таком здании могут проживать тысячи людей. Эта технология позволит сохранить сельскохозяйственные земли для производства пищи, в условиях постоянно растущего населения планеты.",
+      },
+      {
+        attribute: "title",
+        content: "9. «Умные» кирпичи",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Изготовленные из высококачественного бетона модульные кирпичи имеют место для проведения электропроводки, сантехники и изоляции. «Умные» кирпичи значительно снижают затраты на строительство.",
+      },
+      {
+        attribute: "title",
+        content: "10. «Вертикальный» лес",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Данная новаторская технология предназначена для борьбы с загрязнением воздуха в городах. В высотном здании будет расти более 1000 деревьев и 2500 кустарников, которые будут поглощать углекислый газ и фильтровать окружающий воздух.",
+      },
+    ],
+  },
+  // ARTICLE 5 END
 ];

@@ -25,9 +25,9 @@ import vinilovayaplitka1 from "../assets/otherPages/interior/vinilovaya_1.webp";
 import vinilovayaplitka2 from "../assets/otherPages/interior/vinilovaya_2.webp";
 import vinilovayaplitka3 from "../assets/otherPages/interior/vinilovaya_3.webp";
 
-import regulirovkaOkon1 from '../assets/otherPages/interior/regulirovka_okon1.webp'
-import regulirovkaOkon2 from '../assets/otherPages/interior/regulirovka_okon2.webp'
-import regulirovkaOkon3 from '../assets/otherPages/interior/regulirovka_okon3.webp'
+import regulirovkaOkon1 from "../assets/otherPages/interior/regulirovka_okon1.webp";
+import regulirovkaOkon2 from "../assets/otherPages/interior/regulirovka_okon2.webp";
+import regulirovkaOkon3 from "../assets/otherPages/interior/regulirovka_okon3.webp";
 
 // interior articles
 export const interiorArticles = [

@@ -15,7 +15,7 @@ const MainMaterials = () => {
 
   return (
     <section className="bg-secondary dark:bg-primary">
-      <div className="wrapper section flex flex-col gap-y-6 md:flex-row md:gap-x-4 lg:gap-x-6">
+      <div className="wrapper section flex flex-col gap-y-8 md:flex-row md:gap-x-4 lg:gap-x-6">
         {/* sidebar */}
         <div className="md:flex-[35%]">
           <MainMaterialsSidebar />
@@ -27,7 +27,7 @@ const MainMaterials = () => {
           <img src={img} alt="стройматериалы" className="w-full object-cover" />
 
           {/* text */}
-          <div className="px-2 py-4 flex flex-col gap-y-2">
+          <div className="px-2 pt-4 flex flex-col gap-y-2">
             <h3 className="pretitle text-primary dark:text-secondary">
               {pretitle}
             </h3>

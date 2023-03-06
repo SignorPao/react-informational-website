@@ -10,8 +10,12 @@ import vybiraemmoiku2 from "../assets/otherPages/plumbing/vybiraem_moiku_2.webp"
 import vybiraemmoiku3 from "../assets/otherPages/plumbing/vybiraem_moiku_3.webp";
 
 import mainPlumbing3 from "../assets/mainPage/mainPlumbing3.webp";
-import vyborsmes1 from '../assets/otherPages/plumbing/vybor_smesitel_1.webp'
-import vyborsmes2 from '../assets/otherPages/plumbing/vybor_smesitel_2.webp'
+import vyborsmes1 from "../assets/otherPages/plumbing/vybor_smesitel_1.webp";
+import vyborsmes2 from "../assets/otherPages/plumbing/vybor_smesitel_2.webp";
+
+import unitaz1 from "../assets/otherPages/plumbing/unitaz1.webp";
+import unitaz2 from "../assets/otherPages/plumbing/unitaz2.webp";
+import unitaz3 from "../assets/otherPages/plumbing/unitaz3.webp";
 
 // plumbing articles
 export const plumbingArticles = [
@@ -273,4 +277,60 @@ export const plumbingArticles = [
     ],
   },
   // ARTICLE 3 END
+
+  // ARTICLE 4 START
+  {
+    id: "Что необходимо знать, выбирая унитаз",
+    img: unitaz1,
+    pretitle: "Сантехника",
+    title: "Что необходимо знать, выбирая унитаз",
+    tagString: "сантехника унитаз",
+    tags: [
+      {
+        tag: "сантехника",
+        tagLink: "#",
+      },
+      {
+        tag: "унитаз",
+        tagLink: "#",
+      },
+    ],
+    linkToArticle: "/plumbing/Что необходимо знать, выбирая унитаз",
+    text: [
+      {
+        attribute: "paragraph",
+        content:
+          "Выбирая унитаз, необходимо учитывать не только стоимость, производителя, материал, цвет и внешний вид, но и менее очевидные параметры, такие как установка и обслуживание.",
+      },
+      {
+        attribute: "image",
+        content: unitaz2,
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Первое на что следует обратить внимание это размеры помещения, где будет установлен унитаз. При дефиците пространства следует отдавать предпочтение подвесным моделям, а также унитазам без  бачков у которых смывочные устройства устанавливаются непосредственно на трубу водопровода. Ещё одна важнейшая характеристика — тип смывания воды: прямое или круговое. Более предпочтительным является круговой слив, который из-за более сильного напора воды лучше омывает раковину. Что касается других моделей то наиболее популярными остаются «компакты», с установкой сливного бачка на унитазе, где подача воды осуществляется либо снизу, либо сбоку. Из-за практически бесшумной подачи, следует остановить свой выбор на нижнем подведении воды. Унитаз-моноблок, имея самые внушительные габариты, подойдёт для санузла большой площади.",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Основными материалами изготовления являются фаянс и фарфор, кроме того существуют модели из чугуна, стали, пластика и стекла. Фарфор в сравнении с фаянсом обладает меньшей пористостью и меньше впитывает запахи и воду(менее1%, у фаянса 10% и более), что влияет на долговечность использования.",
+      },
+      {
+        attribute: "image",
+        content: unitaz3,
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Далее рассмотрим варианты сливных конструкций: горизонтальный, косой и вертикальный. Самым универсальным из всех является — горизонтальный, позволяющий при помощи специального переходника, вывести трубу в стену или в пол. Косая сливная конструкция(угол 30-40), позволяет расположить унитаз максимально близко к стене, что подойдёт для небольших санузлов.",
+      },
+      {
+        attribute: "paragraph",
+        content:
+          "Также при покупке унитаза необходимо убедиться в полной комплектации арматуры сливного бачка и крепёжных элементов.",
+      },
+    ],
+  },
+  // ARTICLE 4 END
 ];

@@ -3,6 +3,7 @@ import mainInterior from "../assets/mainPage/mainInterior.webp";
 import mainInteriorSidebar1 from "../assets/mainPage/mainInteriorSidebar1.webp";
 import mainInteriorSidebar2 from "../assets/mainPage/mainInteriorSidebar2.webp";
 import mainInteriorSidebar3 from "../assets/mainPage/mainInteriorSidebar3.webp";
+import mainInteriorSidebar4 from "../assets/otherPages/interior/regulirovka_okon1.webp";
 
 import mainGarden1 from "../assets/mainPage/mainGarden1.webp";
 import mainGarden2 from "../assets/mainPage/mainGarden2.webp";
@@ -12,6 +13,7 @@ import mainMaterials from "../assets/mainPage/mainMaterials.webp";
 import mainMaterialsSidebar1 from "../assets/mainPage/mainMaterialsSidebar1.webp";
 import mainMaterialsSidebar2 from "../assets/mainPage/mainMaterialsSidebar2.webp";
 import mainMaterialsSidebar3 from "../assets/mainPage/mainMaterialsSidebar3.webp";
+import mainMaterialsSidebar4 from "../assets/otherPages/materials/10_materialov1.webp";
 
 import mainPlumbing1 from "../assets/mainPage/mainPlumbing1.webp";
 import mainPlumbing2 from "../assets/mainPage/mainPlumbing2.webp";
@@ -78,6 +80,11 @@ export const mainInteriorSidebarData = [
     title: "Виниловая плитка",
     link: "/interior/Виниловая плитка",
   },
+  {
+    img: mainInteriorSidebar4,
+    title: "Регулировка пластиковых окон «зима/лето»",
+    link: "/interior/Регулировка пластиковых окон",
+  },
 ];
 
 export const mainGardenData = [
@@ -124,6 +131,11 @@ export const mainMaterialsSidebarData = [
     img: mainMaterialsSidebar3,
     title: "Древесные плиты. Характеристики, область применения",
     link: "/materials/Древесные плиты. Характеристики, область применения",
+  },
+  {
+    img: mainMaterialsSidebar4,
+    title: "Десять футуристических строительных технологий",
+    link: "/materials/Десять футуристических строительных технологий",
   },
 ];
 

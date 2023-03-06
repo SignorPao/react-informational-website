@@ -34,7 +34,7 @@ const MainPlumbing = () => {
                 </div>
 
                 {/* text */}
-                <div className="px-2 py-4 flex flex-col gap-y-2">
+                <div className="px-2 lg:px-5 py-4 lg:py-6 flex flex-col gap-y-2">
                   <h3 className="pretitle">{pretitle}</h3>
                   <h2 className="subTitle articleHover group-hover:underline-offset-6 decoration-1">
                     {title}

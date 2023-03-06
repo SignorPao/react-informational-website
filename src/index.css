@@ -39,7 +39,7 @@
     @apply font-primary font-semibold text-base lg:text-lg xl:text-2xl;
   }
   .sidebarTitle {
-    @apply font-medium text-sm lg:text-base xl:text-lg;
+    @apply font-medium text-xs lg:text-base xl:text-lg;
   }
   .articleHover {
     @apply decoration-[1.2px] group-hover:underline group-hover:underline-offset-8;
