@@ -13,3 +13,9 @@
   <img src="./screenshots/search-1-min.webp" width="30%" />
   <img src="./screenshots/search-2-min.webp" width="30%" />
 </div>
+
+<div align="center">
+  <img src="./screenshots/404-min.webp" width="30%" />
+  <img src="./screenshots/article-0-min.webp" width="30%" />
+  <img src="./screenshots/article-1-min.webp" width="30%" />
+</div>
